@@ -19,6 +19,12 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
         [className]="'w-20 h-20 md:w-28 md:h-28 absolute -top-6 left-10 md:left-28'"
       ></app-image>
 
+      <app-image
+        [src]="'assets/svg/citrusSlice.svg'"
+        [alt]="'Citrus slice'"
+        [className]="'w-20 h-20 md:w-28 md:h-28 absolute top-[20%] left-10 md:left-[32%]'"
+      ></app-image>
+
       <div class="w-full md:w-1/2 my-auto">
         <div class="flex flex-col gap-4 mb-5">
           <app-tag class="mt-4 md:-mt-8 text-sm">
