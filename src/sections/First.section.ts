@@ -3,11 +3,12 @@ import { TagComponent } from "@/components/Tag.component";
 import { ButtonComponent } from "@/components/Button.component";
 import { InputTextComponent } from "@/components/InputText.component";
 import { ImageComponent } from "@/components/Image.component";
+import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
 
 @Component({
   selector: "app-first-section",
   standalone: true,
-  imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent],
+  imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent, DownloadShortcutBlock],
   template: `
     <section
       class="container mx-auto px-4 py-12 flex items-center justify-between min-h-[600px] relative"
@@ -57,11 +58,7 @@ import { ImageComponent } from "@/components/Image.component";
         </div>
 
         <div class="flex items-center space-x-4">
-          <app-button
-            [className]="'bg-red-500 text-white hover:bg-red-600'"
-            [title]="'Download App'"
-            label="Download App"
-          ></app-button>
+          <app-download-shortcut></app-download-shortcut>
 
           <app-button
             [className]="
