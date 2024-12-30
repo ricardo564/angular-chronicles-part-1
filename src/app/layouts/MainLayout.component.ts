@@ -13,7 +13,7 @@ import { HeaderComponent } from '@/components/Header.component';
     <div class="min-h-screen flex flex-col">
       <app-header></app-header>
 
-      <main class="flex-grow">
+      <main class="flex flex-col w-full mx-auto max-w-[1400px]">
         <router-outlet></router-outlet>
       </main>
 

@@ -7,7 +7,7 @@ import { LogoComponent } from "@/components/Logo.component";
   standalone: true,
   imports: [NgFor, LogoComponent],
   template: `
-  <header class="max-w-[1100px] mx-auto flex justify-between items-center  px-4 py-4">
+  <header class="max-w-[1400px] mx-auto flex justify-between items-center  px-4 py-4">
     <app-logo></app-logo>
     <nav class="flex space-x-8">
       <a *ngFor="let item of menuItems"
