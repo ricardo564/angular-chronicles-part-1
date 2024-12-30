@@ -1,4 +1,4 @@
-# 🍽️ Angular Chronicles - Part 1
+# 🍽️ Food Hut - Angular Chronicles - Part 1
 
 Project to learn Angular and see how compatible my skills are with the framework.
 
