@@ -10,8 +10,14 @@ import { ImageComponent } from "@/components/Image.component";
   imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent],
   template: `
     <section
-      class="container mx-auto px-4 py-12 flex items-center justify-between min-h-[600px]"
+      class="container mx-auto px-4 py-12 flex items-center justify-between min-h-[600px] relative"
     >
+      <app-image
+        [src]="'assets/svg/dashedArrowPath.svg'"
+        [alt]="'Dashed arrow path'"
+        [className]="'w-28 h-28 absolute -top-6 left-28'"
+      ></app-image>
+
       <div class="w-1/2 my-auto">
         <div class="flex flex-col gap-4 mb-5">
           <app-tag class="-mt-8  text-sm">

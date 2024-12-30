@@ -1,0 +1,58 @@
+<svg
+  width="141"
+  height="151"
+  viewBox="0 0 141 151"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F54748" stop-opacity="0.2">
+        <animate
+          attributeName="stop-opacity"
+          values="0.2;1;0.2"
+          dur="2s"
+          repeatCount="indefinite"
+        />
+      </stop>
+      <stop offset="100%" stop-color="#F54748" stop-opacity="1">
+        <animate
+          attributeName="stop-opacity"
+          values="1;0.2;1"
+          dur="2s"
+          repeatCount="indefinite"
+        />
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <path
+    opacity="0.5"
+    d="M1 1.5C54.8333 6.5 108.7 15.5 133.5 141.5"
+    stroke="url(#gradient)"
+    stroke-width="2"
+    stroke-dasharray="8 8"
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      values="0;16"
+      dur="1s"
+      repeatCount="indefinite"
+    />
+  </path>
+
+  <path
+    opacity="0.5"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M139.829 143.526L134.841 149.709C134.535 150.088 133.979 150.148 133.6 149.841L127.417 144.853C127.037 144.547 126.978 143.992 127.284 143.612C127.59 143.233 128.146 143.173 128.525 143.479L134.021 147.913L138.455 142.417C138.761 142.038 139.317 141.978 139.696 142.285C140.076 142.591 140.135 143.146 139.829 143.526Z"
+    fill="#F54748"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.5;1;0.5"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </path>
+</svg>
