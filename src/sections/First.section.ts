@@ -20,7 +20,7 @@ import { ImageComponent } from  "@/components/Image.component";
       <div class="w-1/2 my-auto">
         <div class="flex flex-col gap-4 mb-5" >
           <app-tag class="-mt-8  text-sm">
-            <span class="mr-2">🔥</span> People Trust us
+            <app-image [src]="'assets/svg/heartCircle.svg'" [alt]="'Heart circle'" [className]="'w-4 h-4 mr-2'"></app-image> People Trust us
           </app-tag>
         </div>
 
