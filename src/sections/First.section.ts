@@ -2,25 +2,25 @@ import { Component } from "@angular/core";
 import { TagComponent } from "@/components/Tag.component";
 import { ButtonComponent } from "@/components/Button.component";
 import { InputTextComponent } from "@/components/InputText.component";
-import { ImageComponent } from  "@/components/Image.component";
+import { ImageComponent } from "@/components/Image.component";
 
 @Component({
   selector: "app-first-section",
   standalone: true,
-  imports: [
-    TagComponent,
-    ButtonComponent,
-    InputTextComponent,
-    ImageComponent,
-  ],
+  imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent],
   template: `
     <section
       class="container mx-auto px-4 py-12 flex items-center justify-between min-h-[600px]"
     >
       <div class="w-1/2 my-auto">
-        <div class="flex flex-col gap-4 mb-5" >
+        <div class="flex flex-col gap-4 mb-5">
           <app-tag class="-mt-8  text-sm">
-            <app-image [src]="'assets/svg/heartCircle.svg'" [alt]="'Heart circle'" [className]="'w-4 h-4 mr-2'"></app-image> People Trust us
+            <app-image
+              [src]="'assets/svg/heartCircle.svg'"
+              [alt]="'Heart circle'"
+              [className]="'w-4 h-4 mr-2'"
+            ></app-image>
+            People Trust us
           </app-tag>
         </div>
 
@@ -58,7 +58,9 @@ import { ImageComponent } from  "@/components/Image.component";
           ></app-button>
 
           <app-button
-            [className]="'flex flex-row-reverse items-center justify-center gap-2 text-gray-700 hover:bg-gray-100 hover:text-yellow-500 h-12'"
+            [className]="
+              'flex flex-row-reverse items-center justify-center gap-2 text-gray-700 hover:bg-gray-100 hover:text-yellow-500 h-12'
+            "
             [title]="'Watch Video'"
             [label]="'Watch Video'"
           >
@@ -71,38 +73,63 @@ import { ImageComponent } from  "@/components/Image.component";
         </div>
       </div>
 
-      <div
-        class="w-1/2 relative my-auto flex items-center justify-center"
-      >
-        <div
-          class=" top-0 right-0 bg-red-500 rounded-full w-[500px] -z-0"
-        >
+      <div class="w-1/2 relative my-auto flex items-center justify-center">
+        <div class=" top-0 right-0 bg-red-500 rounded-full w-[500px] -z-0">
           <div class="z-10 max-h-[568px]">
             <app-image
               [src]="'/assets/images/happy-customer.png'"
               [alt]="'Happy customer'"
-              [className]="'w-full h-auto object-contain max-h-[500px] rounded-b-full'"
+              [className]="
+                'w-full h-auto object-contain max-h-[500px] rounded-b-full'
+              "
             />
           </div>
         </div>
 
-        <div class="absolute top-10 right-10 bg-white p-2 rounded-lg shadow-lg">
-          <div class="flex items-center space-x-2">
+        <div class="absolute  inset-0 bg-transparent p-2">
+          <div
+            class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[5rem] -ml-9"
+          >
             <app-image
-              [src]="'assets/pizza.jpg'"
+              [src]="'/assets/images/pizza.png'"
               [alt]="'Italian Pizza'"
-              [className]="'w-12 h-12 rounded'"
+              [className]="'w-12 h-12 rounded '"
             />
             <div>
               <p class="font-medium">Italian Pizza</p>
+              <div class="flex items-center space-x-2">
+                <app-image
+                  [src]="'/assets/svg/star.svg'"
+                  [alt]="'Star'"
+                  [className]="'w-4 h-4'"
+                ></app-image>
+                <app-image
+                  [src]="'/assets/svg/star.svg'"
+                  [alt]="'Star'"
+                  [className]="'w-4 h-4'"
+                ></app-image>
+                <app-image
+                  [src]="'/assets/svg/star.svg'"
+                  [alt]="'Star'"
+                  [className]="'w-4 h-4'"
+                ></app-image>
+                <app-image
+                  [src]="'/assets/svg/star.svg'"
+                  [alt]="'Star'"
+                  [className]="'w-4 h-4'"
+                ></app-image>
+                <app-image
+                  [src]="'/assets/svg/starEmpty.svg'"
+                  [alt]="'Star empty'"
+                  [className]="'w-4 h-4'"
+                ></app-image>
+              </div>
               <p class="text-sm text-gray-600">$8.50</p>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   `,
 })
-
-export class FirstSection { }
+export class FirstSection {}
