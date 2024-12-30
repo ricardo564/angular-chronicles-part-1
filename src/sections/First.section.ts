@@ -36,10 +36,14 @@ import { ImageComponent } from  "@/components/Image.component";
         <div class="flex items-center space-x-4 mb-8 ">
           <app-input-text placeholder="Search food" class="w-96">
             <button
-              class="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-yellow-400 rounded-full"
+              class="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors"
             >
               <span class="sr-only">Search</span>
-              🔍
+              <app-image
+                [src]="'assets/svg/searchIcon.svg'"
+                [alt]="'Search'"
+                [className]="'w-6 h-6'"
+              ></app-image>
             </button>
           </app-input-text>
         </div>
@@ -89,4 +93,5 @@ import { ImageComponent } from  "@/components/Image.component";
     </section>
   `,
 })
+
 export class FirstSection { }
