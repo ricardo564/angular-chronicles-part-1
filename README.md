@@ -2,10 +2,10 @@
 
 Project to learn Angular and see how compatible my skills are with the framework.
 
-LIVE PREVIEW: https://food-hut-angular-chronicles-1.netlify.app/
+LIVE PREVIEW: [https://food-hut-angular-chronicles-1.netlify.app/](https://food-hut-angular-chronicles-1.netlify.app/){target="_blank"}
 
 ## 🎨 Design Inspiration
-This project's layout is based on [Food Hut (Food Ordering Responsive Design)](https://www.figma.com/community/file/1103820487891554272) by [Kamran Ali](https://www.figma.com/@KamranAlime).
+This project's layout is based on [Food Hut (Food Ordering Responsive Design)](https://www.figma.com/community/file/1103820487891554272){target="_blank"} by [Kamran Ali](https://www.figma.com/@KamranAlime){target="_blank"}.
 
 ## 🚀 Technologies
 - ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white) Angular 19
