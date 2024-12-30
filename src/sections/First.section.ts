@@ -79,17 +79,23 @@ import { ImageComponent } from "@/components/Image.component";
         </div>
       </div>
 
-      <div class="w-1/2 relative my-auto flex items-center justify-center">
-        <div class=" top-0 right-0 bg-red-500 rounded-full w-[500px] -z-0">
-          <div class="z-10 max-h-[568px]">
-            <app-image
-              [src]="'/assets/images/happy-customer.png'"
-              [alt]="'Happy customer'"
-              [className]="
-                'w-full h-auto object-contain max-h-[500px] rounded-b-full'
-              "
-            />
+        <div class="w-1/2 relative my-auto flex items-center justify-center">
+          <div class=" top-0 right-0 bg-red-500 rounded-full w-[500px] -z-0 relative">
+            <div class="z-10 max-h-[500px]">
+              <app-image
+                [src]="'/assets/images/happy-customer.png'"
+                [alt]="'Happy customer'"
+                [className]="
+                  'w-full h-auto object-contain max-h-[500px] rounded-b-full'
+                "
+              />
           </div>
+
+          <app-image
+            [src]="'assets/svg/semicircle.svg'"
+            [alt]="'Dashed arrow path'"
+            [className]="'w-full h-auto inset-0 top-12 object-contain max-h-[500px]  absolute'"
+          ></app-image>
         </div>
 
         <div class="absolute  inset-0 bg-transparent p-2">
