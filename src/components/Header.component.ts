@@ -1,11 +1,12 @@
 import { NgFor } from "@angular/common";
 import { Component } from "@angular/core";
 import { LogoComponent } from "@/components/Logo.component";
+import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgFor, LogoComponent],
+  imports: [NgFor, LogoComponent, DownloadShortcutBlock],
   template: `
   <header class="max-w-[1400px] mx-auto flex justify-between items-center  px-4 py-4">
     <app-logo></app-logo>
@@ -16,6 +17,7 @@ import { LogoComponent } from "@/components/Logo.component";
         {{item.label}}
       </a>
     </nav>
+    <app-download-shortcut></app-download-shortcut>
   </header>
   `
 })
