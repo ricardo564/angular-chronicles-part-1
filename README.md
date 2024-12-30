@@ -2,12 +2,10 @@
 
 Project to learn Angular and see how compatible my skills are with the framework.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://food-hut-angular-chronicles-1.netlify.app/)
-
 ## 🔗 Quick Links
 - [Live Preview](https://food-hut-angular-chronicles-1.netlify.app/)
 - [Design Inspiration](https://www.figma.com/community/file/1103820487891554272)
-- [Report a Bug](https://github.com/yourusername/food-hut-angular/issues)
+- [Report a Bug](https://github.com/ricardo564/angular-chronicles-part-1/issues)
 
 ## 🎨 Design Inspiration
 This project's layout is based on [Food Hut](https://www.figma.com/community/file/1103820487891554272) by [Kamran Ali](https://www.figma.com/@KamranAlime).
