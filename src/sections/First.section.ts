@@ -11,17 +11,17 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
   imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent, DownloadShortcutBlock],
   template: `
     <section
-      class="container mx-auto px-4 py-12 flex items-center justify-between min-h-[600px] relative"
+      class="mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center justify-between min-h-[600px] relative"
     >
       <app-image
         [src]="'assets/svg/dashedArrowPath.svg'"
         [alt]="'Dashed arrow path'"
-        [className]="'w-28 h-28 absolute -top-6 left-28'"
+        [className]="'w-20 h-20 md:w-28 md:h-28 absolute -top-6 left-10 md:left-28'"
       ></app-image>
 
-      <div class="w-1/2 my-auto">
+      <div class="w-full md:w-1/2 my-auto">
         <div class="flex flex-col gap-4 mb-5">
-          <app-tag class="-mt-8  text-sm">
+          <app-tag class="mt-4 md:-mt-8 text-sm">
             <app-image
               [src]="'assets/svg/heartCircle.svg'"
               [alt]="'Heart circle'"
@@ -31,19 +31,25 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
           </app-tag>
         </div>
 
-        <h1 class="text-5xl font-bold mb-6">
-          We're <span class="text-red-500">Serious</span> For<br />
-          <span class="text-red-500">Food</span> &
-          <span class="text-yellow-500">Delivery</span>.
+        <h1 class="text-3xl md:text-5xl font-bold mb-6 max-w-[400px] md:max-w-none">
+          <span>We're</span>
+          <span class="text-red-500"> Serious</span>
+          <br class="md:hidden" />
+          <span>For</span>
+          <br />
+          <span class="text-red-500">Food</span>
+          <span> &</span>
+          <span class="text-yellow-500"> Delivery</span>
+          <span>.</span>
         </h1>
 
-        <p class="text-gray-600 mb-8 max-w-sm">
+        <p class="text-gray-600 mb-8 w-full max-w-sm text-left">
           Best cooks and best delivery guys all at your service. Hot tasty food
           will reach you in 60 minutes.
         </p>
 
-        <div class="flex items-center space-x-4 mb-8 ">
-          <app-input-text placeholder="Search food" class="w-96">
+        <div class="flex items-center justify-center md:justify-start space-x-4 mb-8">
+          <app-input-text placeholder="Search food" class="w-full md:w-96">
             <button
               class="absolute right-2 top-[1.46rem] -translate-y-1/2 p-2 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors"
             >
@@ -57,7 +63,7 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
           </app-input-text>
         </div>
 
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center justify-center md:justify-start space-x-4">
           <app-download-shortcut></app-download-shortcut>
 
           <app-button
@@ -76,69 +82,69 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
         </div>
       </div>
 
-        <div class="w-1/2 relative my-auto flex items-center justify-center">
-          <div class=" top-0 right-0 bg-red-500 rounded-full w-[500px] -z-0 relative">
-            <div class="z-10 max-h-[500px]">
+      <div class="w-full md:w-1/2 relative my-8 md:my-auto flex items-center justify-center">
+          <div class="top-0 right-0 bg-red-500 rounded-full w-[300px] md:w-[500px] -z-0 relative">
+            <div class="z-10 max-h-[300px] md:max-h-[500px]">
               <app-image
                 [src]="'/assets/images/happy-customer.png'"
                 [alt]="'Happy customer'"
                 [className]="
-                  'w-full h-auto object-contain max-h-[500px] rounded-b-full'
+                  'w-full h-auto object-contain max-h-[300px] md:max-h-[500px] rounded-b-full'
                 "
               />
+            </div>
+
+            <app-image
+              [src]="'assets/svg/semicircle.svg'"
+              [alt]="'Dashed arrow path'"
+              [className]="'w-full h-auto inset-0 top-8 md:top-12 object-contain max-h-[300px] md:max-h-[500px] absolute'"
+            ></app-image>
           </div>
 
-          <app-image
-            [src]="'assets/svg/semicircle.svg'"
-            [alt]="'Dashed arrow path'"
-            [className]="'w-full h-auto inset-0 top-12 object-contain max-h-[500px]  absolute'"
-          ></app-image>
-        </div>
-
-        <div class="absolute  inset-0 bg-transparent p-2">
-          <div
-            class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[5rem] -ml-9"
-          >
-            <app-image
-              [src]="'/assets/images/pizza.png'"
-              [alt]="'Italian Pizza'"
-              [className]="'w-12 h-12 rounded '"
-            />
-            <div>
-              <p class="font-medium">Italian Pizza</p>
-              <div class="flex items-center space-x-2">
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/starEmpty.svg'"
-                  [alt]="'Star empty'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
+          <div class="absolute inset-0 bg-transparent p-2">
+            <div
+              class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] md:mt-[5rem] -ml-4 md:-ml-9"
+            >
+              <app-image
+                [src]="'/assets/images/pizza.png'"
+                [alt]="'Italian Pizza'"
+                [className]="'w-12 h-12 rounded '"
+              />
+              <div>
+                <p class="font-medium">Italian Pizza</p>
+                <div class="flex items-center space-x-2">
+                  <app-image
+                    [src]="'/assets/svg/star.svg'"
+                    [alt]="'Star'"
+                    [className]="'w-4 h-4'"
+                  ></app-image>
+                  <app-image
+                    [src]="'/assets/svg/star.svg'"
+                    [alt]="'Star'"
+                    [className]="'w-4 h-4'"
+                  ></app-image>
+                  <app-image
+                    [src]="'/assets/svg/star.svg'"
+                    [alt]="'Star'"
+                    [className]="'w-4 h-4'"
+                  ></app-image>
+                  <app-image
+                    [src]="'/assets/svg/star.svg'"
+                    [alt]="'Star'"
+                    [className]="'w-4 h-4'"
+                  ></app-image>
+                  <app-image
+                    [src]="'/assets/svg/starEmpty.svg'"
+                    [alt]="'Star empty'"
+                    [className]="'w-4 h-4'"
+                  ></app-image>
+                </div>
+                <p class="text-sm text-gray-600">$8.50</p>
               </div>
-              <p class="text-sm text-gray-600">$8.50</p>
             </div>
           </div>
-        </div>
       </div>
     </section>
   `,
 })
-export class FirstSection {}
+export class FirstSection { }
