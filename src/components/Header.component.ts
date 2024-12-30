@@ -10,7 +10,7 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
   template: `
   <header class="max-w-[1400px] mx-auto flex justify-between items-center  px-4 py-4">
     <app-logo></app-logo>
-    <nav class="flex space-x-8">
+    <nav class="hidden md:flex space-x-8">
       <a *ngFor="let item of menuItems"
         [href]="item.link"
         class="text-gray-700 hover:text-red-500 transition-colors">
