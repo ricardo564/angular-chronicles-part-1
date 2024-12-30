@@ -2,6 +2,8 @@
 
 Project to learn Angular and see how compatible my skills are with the framework.
 
+LIVE PREVIEW: https://food-hut-angular-chronicles-1.netlify.app/
+
 ## 🎨 Design Inspiration
 This project's layout is based on [Food Hut (Food Ordering Responsive Design)](https://www.figma.com/community/file/1103820487891554272) by [Kamran Ali](https://www.figma.com/@KamranAlime).
 
