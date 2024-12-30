@@ -18,9 +18,11 @@ import { ImageComponent } from  "@/components/Image.component";
       class="container mx-auto px-4 py-12 flex items-center justify-between min-h-[600px]"
     >
       <div class="w-1/2 my-auto">
-        <app-tag class="mb-6">
-          <span class="mr-2">🔥</span> People Trust us
-        </app-tag>
+        <div class="flex flex-col gap-4 mb-5" >
+          <app-tag class="-mt-8  text-sm">
+            <span class="mr-2">🔥</span> People Trust us
+          </app-tag>
+        </div>
 
         <h1 class="text-5xl font-bold mb-6">
           We're <span class="text-red-500">Serious</span> For<br />
@@ -36,7 +38,7 @@ import { ImageComponent } from  "@/components/Image.component";
         <div class="flex items-center space-x-4 mb-8 ">
           <app-input-text placeholder="Search food" class="w-96">
             <button
-              class="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors"
+              class="absolute right-2 top-[1.46rem] -translate-y-1/2 p-2 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors"
             >
               <span class="sr-only">Search</span>
               <app-image
@@ -49,14 +51,23 @@ import { ImageComponent } from  "@/components/Image.component";
         </div>
 
         <div class="flex items-center space-x-4">
-          <app-button label="Download App" variant="primary"></app-button>
-          <button class="flex items-center space-x-2 text-gray-700">
-            <span
-              class="w-10 h-10 flex items-center justify-center bg-white rounded-full"
-              >▶️</span
-            >
-            <span>Watch Video</span>
-          </button>
+          <app-button
+            [className]="'bg-red-500 text-white hover:bg-red-600'"
+            [title]="'Download App'"
+            label="Download App"
+          ></app-button>
+
+          <app-button
+            [className]="'flex flex-row-reverse items-center justify-center gap-2 text-gray-700 hover:bg-gray-100 hover:text-yellow-500 h-12'"
+            [title]="'Watch Video'"
+            [label]="'Watch Video'"
+          >
+            <app-image
+              [src]="'assets/svg/arrowRight.svg'"
+              [alt]="'Arrow right'"
+              [className]="'w-[3.25rem] h-[3.25rem] mt-2'"
+            ></app-image>
+          </app-button>
         </div>
       </div>
 
