@@ -15,7 +15,6 @@ import { ImageComponent } from "./Image.component";
           [alt]="name"
           [className]="'w-12 h-12 rounded'"
         />
-
         <div>
           <p class="font-medium">{{ name }}</p>
           <div class="flex items-center space-x-2">
@@ -26,6 +25,7 @@ import { ImageComponent } from "./Image.component";
               "
               [alt]="star ? 'Star' : 'Star empty'"
               [className]="'w-4 h-4'"
+              title="Note of the food is {{ rating }}"
             />
             }
           </div>
