@@ -145,6 +145,12 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
               [className]="'w-[10rem]  mx-auto absolute -bottom-[5rem] right-[5rem] rotate-16 z-[50]'"
             ></app-image>
 
+            <app-image
+              [src]="'assets/images/grilled-salmon-vegetables.webp'"
+              [alt]="'Grilled salmon vegetables'"
+              [className]="'w-[10rem]  mx-auto absolute -bottom-[5rem] left-[5rem] rotate-16 z-[50]'"
+            ></app-image>
+
           </div>
 
           <app-happy-customer-badge [className]="'absolute top-24 -right-0'"></app-happy-customer-badge>
