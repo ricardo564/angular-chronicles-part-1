@@ -30,6 +30,14 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
       ></app-image>
 
       <app-image
+        [src]="'assets/svg/curved-lines.svg'"
+        [alt]="'Curved lines'"
+        [className]="
+          'w-[23rem]  absolute top-0 right-0'
+        "
+      ></app-image>
+
+      <app-image
         [src]="'assets/svg/citrusSlice.svg'"
         [alt]="'Citrus slice'"
         [className]="
