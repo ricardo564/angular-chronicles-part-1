@@ -34,6 +34,7 @@ import { ImageComponent } from "./Image.component";
     </div>
   `,
 })
+
 export class FoodRatingCardComponent {
   @Input() imageSrc: string = "";
   @Input() name: string = "";
