@@ -8,7 +8,7 @@ import { ButtonComponent } from "@/components/Button.component";
   template: `
     <a href="https://www.linkedin.com/in/ricardo-camilo-492b95b3/" target="_blank">
       <app-button
-        [className]="'bg-red-500 text-white hover:bg-red-600'"
+        [className]="'bg-red-500 text-white hover:bg-red-600 truncate'"
         [title]="'Download App'"
         label="Download App"
       ></app-button>
