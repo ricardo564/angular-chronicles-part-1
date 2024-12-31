@@ -110,6 +110,12 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           [className]="'w-[9rem]  mx-auto absolute -top-[3.5rem] right-[8rem] rotate-16 z-[50]'"
         ></app-image>
 
+        <app-image
+          [src]="'assets/svg/leaf-outline.svg'"
+          [alt]="'Leaf outline'"
+          [className]="'w-[9rem]  mx-auto absolute bottom-[2rem] right-0 rotate-16 z-[50]'"
+        ></app-image>
+
           <div class="top-0 right-0 bg-red-500 rounded-full w-[300px] md:w-[500px] -z-0 relative">
             <div class="z-10 max-h-[300px] md:max-h-[500px]">
               <app-image
