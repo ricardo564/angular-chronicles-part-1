@@ -32,9 +32,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
       <app-image
         [src]="'assets/svg/curved-lines.svg'"
         [alt]="'Curved lines'"
-        [className]="
-          'w-[23rem]  absolute top-0 right-0'
-        "
+        [className]="'w-[23rem]  absolute top-0 right-0'"
       ></app-image>
 
       <app-image
@@ -64,7 +62,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         </div>
 
         <h1
-          class="text-3xl md:text-5xl font-bold mb-6 max-w-[400px] md:max-w-none"
+          class="text-3xl md:text-5xl font-bold mb-6 max-w-[400px] md:max-w-none relative"
         >
           <span>We're</span>
           <span class="text-red-500"> Serious</span>
@@ -75,6 +73,11 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           <span> &</span>
           <span class="text-yellow-500"> Delivery</span>
           <span>.</span>
+          <app-image
+            [src]="'assets/svg/redBrushStroke.svg'"
+            [alt]="'Red brush stroke'"
+            [className]="'w-[20rem]  absolute left-[10rem] -bottom-4'"
+          ></app-image>
         </h1>
 
         <p class="text-gray-600 mb-8 w-full max-w-sm text-left">
@@ -210,9 +213,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         <app-image
           [src]="'assets/svg/heart-curved-path.svg'"
           [alt]="'Heart curved path'"
-          [className]="
-            'w-[7rem] h-[20rem]  absolute -top-16 right-0'
-          "
+          [className]="'w-[7rem] h-[20rem]  absolute -top-16 right-0'"
         ></app-image>
 
         <div class="absolute inset-0 bg-transparent p-2">
