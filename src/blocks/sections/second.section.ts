@@ -1,13 +1,20 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ProductCardComponent } from "@/components/ProductCard.component";
+import { ImageComponent } from "@/components/Image.component";
 
 @Component({
   selector: "app-second-section",
   standalone: true,
-  imports: [CommonModule, ProductCardComponent],
+  imports: [CommonModule, ProductCardComponent, ImageComponent],
   template: `
-    <section class="py-12 px-4 max-w-7xl mx-auto min-h-[38rem] flex flex-col justify-center items-center gap-24 pt-[8rem]">
+    <section class="py-12 px-4 max-w-7xl mx-auto min-h-[38rem] flex flex-col justify-center items-center gap-24 pt-[8rem] relative">
+      <app-image
+        [src]="'assets/svg/circular-dots-pattern.svg'"
+        [alt]="'Circular dots pattern'"
+        [className]="'w-[160px] h-auto absolute top-[16rem] -left-[7rem]'"
+      ></app-image>
+
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold">
           Today <span class="text-red-500">Special</span> Offers
