@@ -7,31 +7,31 @@ import { ImageComponent } from "@/components/Image.component";
   imports: [ImageComponent],
   template: `
     <div class="{{ className }}">
-      <div class="absolute inset-0 bg-yellow-400/30 blur-xl rounded-full"></div>
-
       <div
-        class="relative flex items-center gap-1 bg-white p-3 rounded-full shadow-lg w-fit"
+        class="relative flex items-center gap-1 bg-white p-2 lg:p-3 rounded-full shadow-lg w-fit"
       >
         <div
-          class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center"
+          class="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-yellow-100 flex items-center justify-center"
         >
           <app-image
             [src]="'assets/svg/happyFace.svg'"
             [alt]="'Happy face'"
-            [className]="'w-full h-auto object-cover'"
+            [className]="'w-10 lg:w-full h-auto object-cover'"
           ></app-image>
         </div>
 
         <div class="flex flex-col">
-          <span class="font-medium text-gray-800">{{ title }}</span>
+          <span class="text-xs lg:text-normal font-medium text-gray-800">{{
+            title
+          }}</span>
           <div class="flex items-center gap-1">
             <app-image
               [src]="'assets/svg/star.svg'"
               [alt]="'Star'"
-              [className]="'w-6 h-auto object-contain'"
+              [className]="'w-3 lg:w-6 h-auto object-contain'"
             ></app-image>
-            <span class="text-gray-700 font-medium">{{ rating }}</span>
-            <span class="text-gray-500 text-sm">({{ reviews }} Reviews)</span>
+            <span class="text-xs lg:text-normal text-gray-700 font-medium">{{ rating }}</span>
+            <span class="text-xs text-gray-500 lg:text-sm">({{ reviews }} Reviews)</span>
           </div>
         </div>
       </div>
