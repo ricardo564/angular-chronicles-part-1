@@ -8,7 +8,7 @@ import { ImageComponent } from "@/components/Image.component";
   standalone: true,
   imports: [CommonModule, ProductCardComponent, ImageComponent],
   template: `
-    <section class="py-12 px-4 max-w-7xl mx-auto min-h-[38rem] flex flex-col justify-center items-center gap-24 pt-[8rem] relative">
+    <section class="py-12 px-4 max-w-7xl mx-auto min-h-[38rem] flex flex-col justify-center items-center gap-24 relative">
       <app-image
         [src]="'assets/svg/circular-dots-pattern.svg'"
         [alt]="'Circular dots pattern'"
