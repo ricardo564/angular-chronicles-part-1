@@ -8,7 +8,7 @@ import { ButtonComponent } from "@/components/Button.component";
   standalone: true,
   imports: [RouterLink, ImageComponent, ButtonComponent],
   template: `
-    <footer class="bg-white py-12 px-4 md:px-8 lg:px-16 mt-auto bottom-0 pt-64">
+    <footer class="bg-white py-12 px-4 mt-auto bottom-0 pt-64">
       <div
         class="max-w-screen mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
       >
@@ -115,8 +115,8 @@ import { ButtonComponent } from "@/components/Button.component";
                 rel="noopener"
                 target="_blank"
               >
-                >Partnership</a
-              >
+                Partnership
+              </a>
             </li>
             <li>
               <a
