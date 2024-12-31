@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '@/components/Header.component';
+import { FooterComponent } from '@/blocks/sections/footer.section';
 
 @Component({
   selector: 'app-main-layout',
@@ -8,6 +9,7 @@ import { HeaderComponent } from '@/components/Header.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
+    FooterComponent,
   ],
   template: `
     <div class="min-h-screen flex flex-col">
@@ -17,6 +19,7 @@ import { HeaderComponent } from '@/components/Header.component';
         <router-outlet></router-outlet>
       </main>
 
+      <app-footer></app-footer>
     </div>
   `
 })
