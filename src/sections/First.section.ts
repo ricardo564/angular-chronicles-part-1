@@ -190,7 +190,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             [src]="'assets/images/buddha-bowl-sauce.webp'"
             [alt]="'Buddha bowl sauce'"
             [className]="
-              'w-[10rem] mx-auto absolute bottom-[1rem] -left-[5rem] rotate-16 z-[50]'
+              'w-[10rem] mx-auto absolute bottom-[1rem] -left-[3rem] rotate-16 z-[50]'
             "
           ></app-image>
         </div>
