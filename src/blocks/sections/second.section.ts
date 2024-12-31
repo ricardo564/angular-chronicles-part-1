@@ -15,6 +15,12 @@ import { ImageComponent } from "@/components/Image.component";
         [className]="'w-[160px] h-auto absolute top-[16rem] -left-[7rem]'"
       ></app-image>
 
+      <app-image
+        [src]="'assets/svg/pine-branch.svg'"
+        [alt]="'Pine branch'"
+        [className]="'w-[160px] h-auto absolute -bottom-16 -right-[12rem]'"
+      ></app-image>
+
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold">
           Today <span class="text-red-500">Special</span> Offers
