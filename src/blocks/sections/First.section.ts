@@ -5,6 +5,7 @@ import { InputTextComponent } from "@/components/InputText.component";
 import { ImageComponent } from "@/components/Image.component";
 import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
 import { CustomerBadgeComponent } from "@/components/CustomerBadge.component";
+import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
 
 @Component({
   selector: "app-first-section",
@@ -16,6 +17,7 @@ import { CustomerBadgeComponent } from "@/components/CustomerBadge.component";
     ImageComponent,
     DownloadShortcutBlock,
     CustomerBadgeComponent,
+    FoodRatingCardComponent,
   ],
   template: `
     <section
@@ -216,48 +218,13 @@ import { CustomerBadgeComponent } from "@/components/CustomerBadge.component";
           [className]="'w-[7rem] h-[20rem]  absolute -top-16 right-0'"
         ></app-image>
 
-        <div class="absolute inset-0 bg-transparent p-2">
-          <div
-            class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] lg:mt-[5rem] -ml-4 lg:-ml-9"
-          >
-            <app-image
-              [src]="'/assets/images/pizza.webp'"
-              [alt]="'Italian Pizza'"
-              [className]="'w-12 h-12 rounded '"
-            />
-            <div>
-              <p class="font-medium">Italian Pizza</p>
-              <div class="flex items-center space-x-2">
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/star.svg'"
-                  [alt]="'Star'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-                <app-image
-                  [src]="'/assets/svg/starEmpty.svg'"
-                  [alt]="'Star empty'"
-                  [className]="'w-4 h-4'"
-                ></app-image>
-              </div>
-              <p class="text-sm text-gray-600">$8.50</p>
-            </div>
-          </div>
-        </div>
+        <app-food-rating-card
+          [imageSrc]="'assets/images/pizza.webp'"
+          [name]="'Italian Pizza'"
+          [rating]="3"
+          [price]="10.50"
+          [className]="'absolute bottom-0 left-0'"
+        ></app-food-rating-card>
       </div>
     </section>
   `,
