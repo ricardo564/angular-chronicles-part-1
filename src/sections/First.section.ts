@@ -19,13 +19,13 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
   ],
   template: `
     <section
-      class="mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center justify-between min-h-[600px] relative"
+      class="mx-auto px-4 py-12 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[600px] relative"
     >
       <app-image
         [src]="'assets/svg/dashedArrowPath.svg'"
         [alt]="'Dashed arrow path'"
         [className]="
-          'w-20 h-20 md:w-28 md:h-28 absolute -top-6 left-10 md:left-28'
+          'hidden lg:block w-20 h-20 lg:w-28 lg:h-28 absolute -top-6 left-10 lg:left-28'
         "
       ></app-image>
 
@@ -39,7 +39,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         [src]="'assets/svg/citrusSlice.svg'"
         [alt]="'Citrus slice'"
         [className]="
-          'w-20 h-20 md:w-28 md:h-28 absolute top-[20%] left-10 md:left-[32%]'
+          'w-20 h-20 lg:w-28 lg:h-28 absolute top-[20%] left-10 lg:left-[32%]'
         "
       ></app-image>
 
@@ -49,9 +49,9 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         [className]="'w-16 h-16  absolute bottom-0 left-0 '"
       ></app-image>
 
-      <div class="w-full md:w-1/2 my-auto">
+      <div class="w-full lg:w-1/2 my-auto">
         <div class="flex flex-col gap-4 mb-5">
-          <app-tag class="mt-4 md:-mt-8 text-sm">
+          <app-tag class="mt-4 lg:-mt-8 text-sm">
             <app-image
               [src]="'assets/svg/heartCircle.svg'"
               [alt]="'Heart circle'"
@@ -62,11 +62,11 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         </div>
 
         <h1
-          class="text-3xl md:text-5xl font-bold mb-6 max-w-[400px] md:max-w-none relative"
+          class="text-3xl lg:text-5xl font-bold mb-6 max-w-[400px] lg:max-w-none relative"
         >
           <span>We're</span>
           <span class="text-red-500"> Serious</span>
-          <br class="md:hidden" />
+          <br class="lg:hidden" />
           <span>For</span>
           <br />
           <span class="text-red-500">Food</span>
@@ -86,9 +86,9 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         </p>
 
         <div
-          class="flex items-center justify-center md:justify-start space-x-4 mb-8"
+          class="flex items-center justify-center lg:justify-start space-x-4 mb-8"
         >
-          <app-input-text placeholder="Search food" class="w-full md:w-96">
+          <app-input-text placeholder="Search food" class="w-full lg:w-96">
             <button
               class="absolute right-2 top-[1.46rem] -translate-y-1/2 p-2 bg-yellow-400 rounded-full hover:bg-yellow-500 transition-colors"
             >
@@ -103,7 +103,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         </div>
 
         <div
-          class="flex items-center justify-center md:justify-start space-x-4"
+          class="flex items-center justify-center lg:justify-start space-x-4"
         >
           <app-download-shortcut></app-download-shortcut>
 
@@ -132,7 +132,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           <app-image
             [src]="'assets/svg/fire.svg'"
             [alt]="'Fire'"
-            [className]="'w-10 h-10 md:w-16 md:h-16  mx-auto'"
+            [className]="'w-10 h-10 lg:w-16 lg:h-16  mx-auto'"
           ></app-image>
         </div>
 
@@ -140,7 +140,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           [src]="'assets/svg/coriander-leaves.svg'"
           [alt]="'Coriander leaves'"
           [className]="
-            'w-[9rem]  mx-auto absolute -top-[3.5rem] right-[8rem] rotate-16 z-[50]'
+            'lg:w-[9rem] w-16 mx-auto absolute -top-[2rem] lg:-top-[3.5rem] right-10 lg:right-[8rem] rotate-16 z-[50]'
           "
         ></app-image>
 
@@ -153,14 +153,14 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         ></app-image>
 
         <div
-          class="top-0 right-0 bg-red-500 rounded-full w-[300px] md:w-[500px] -z-0 relative"
+          class="top-0 right-0 bg-red-500 rounded-full w-[300px] lg:w-[500px] -z-0 relative"
         >
-          <div class="z-10 max-h-[300px] md:max-h-[500px]">
+          <div class="z-10 max-h-[300px] lg:max-h-[500px]">
             <app-image
               [src]="'/assets/images/happy-customer.webp'"
               [alt]="'Happy customer'"
               [className]="
-                'w-full h-auto object-contain max-h-[300px] md:max-h-[500px] rounded-b-full'
+                'w-full h-auto object-contain max-h-[300px] lg:max-h-[500px] rounded-b-full'
               "
             />
           </div>
@@ -169,7 +169,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             [src]="'assets/svg/semicircle.svg'"
             [alt]="'Dashed arrow path'"
             [className]="
-              'w-full h-auto inset-0 top-8 md:top-12 object-contain max-h-[300px] md:max-h-[500px] absolute'
+              'w-full h-auto inset-0 top-8 lg:top-12 object-contain max-h-[300px] lg:max-h-[500px] absolute'
             "
           ></app-image>
 
@@ -218,7 +218,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
 
         <div class="absolute inset-0 bg-transparent p-2">
           <div
-            class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] md:mt-[5rem] -ml-4 md:-ml-9"
+            class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] lg:mt-[5rem] -ml-4 lg:-ml-9"
           >
             <app-image
               [src]="'/assets/images/pizza.webp'"
