@@ -1,16 +1,16 @@
 import { Component } from "@angular/core";
-import { RouterLink } from "@angular/router";
 import { ImageComponent } from "@/components/Image.component";
 import { ButtonComponent } from "@/components/Button.component";
+import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
 
 @Component({
   selector: "app-footer",
   standalone: true,
-  imports: [RouterLink, ImageComponent, ButtonComponent],
+  imports: [ImageComponent, ButtonComponent],
   template: `
     <footer class="bg-white py-12 px-4 mt-auto bottom-0 pt-64">
       <div
-        class="max-w-screen mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1400px]"
       >
         <div class="space-y-4">
           <h2 class="text-[#FF5956] text-2xl font-bold">Foodhut</h2>
@@ -21,7 +21,7 @@ import { ButtonComponent } from "@/components/Button.component";
 
           <div class="flex space-x-4">
             <a
-              [routerLink]="['/']"
+              [href]="[getRandomLinkForRedirection()]"
               class="text-[#FDB100] hover:opacity-80"
               rel="noopener"
               target="_blank"
@@ -33,7 +33,7 @@ import { ButtonComponent } from "@/components/Button.component";
               />
             </a>
             <a
-              [routerLink]="['/']"
+              [href]="[getRandomLinkForRedirection()]"
               class="text-[#FDB100] hover:opacity-80"
               rel="noopener"
               target="_blank"
@@ -45,7 +45,7 @@ import { ButtonComponent } from "@/components/Button.component";
               />
             </a>
             <a
-              [routerLink]="['/']"
+              [href]="[getRandomLinkForRedirection()]"
               class="text-[#FDB100] hover:opacity-80"
               rel="noopener"
               target="_blank"
@@ -64,7 +64,7 @@ import { ButtonComponent } from "@/components/Button.component";
           <ul class="space-y-2">
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -74,7 +74,7 @@ import { ButtonComponent } from "@/components/Button.component";
             </li>
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -84,7 +84,7 @@ import { ButtonComponent } from "@/components/Button.component";
             </li>
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -94,7 +94,7 @@ import { ButtonComponent } from "@/components/Button.component";
             </li>
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -120,7 +120,7 @@ import { ButtonComponent } from "@/components/Button.component";
             </li>
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -130,7 +130,7 @@ import { ButtonComponent } from "@/components/Button.component";
             </li>
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -139,7 +139,7 @@ import { ButtonComponent } from "@/components/Button.component";
             </li>
             <li>
               <a
-                [routerLink]="['/']"
+                [href]="[getRandomLinkForRedirection()]"
                 class="text-gray-600 hover:text-[#FF5956]"
                 rel="noopener"
                 target="_blank"
@@ -150,7 +150,9 @@ import { ButtonComponent } from "@/components/Button.component";
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-[#FF5956] text-xl font-semibold">Get in touch</h3>
+          <h3 class="text-[#FF5956] text-xl font-semibold">
+            Get in touch
+          </h3>
           <p class="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor
@@ -175,16 +177,20 @@ import { ButtonComponent } from "@/components/Button.component";
 
       <div class="mt-12 text-center text-gray-600">
         <a
-          [routerLink]="['/']"
+          [href]="[getRandomLinkForRedirection()]"
           class="hover:text-red-500"
           rel="noopener"
           target="_blank"
         >
-          <p>Copyright © 2022 Foodhut.</p>
+          Copyright © 2022 Foodhut.
         </a>
       </div>
     </footer>
   `,
 })
 
-export class FooterComponent {}
+export class FooterComponent {
+  getRandomLinkForRedirection() {
+    return getRandomLinkForRedirection();
+  }
+}
