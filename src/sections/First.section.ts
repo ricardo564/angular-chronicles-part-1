@@ -132,6 +132,13 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
               [alt]="'Dashed arrow path'"
               [className]="'w-full h-auto inset-0 top-8 md:top-12 object-contain max-h-[300px] md:max-h-[500px] absolute'"
             ></app-image>
+
+            <app-image
+              [src]="'assets/images/grilled-chicken-plate.webp'"
+              [alt]="'Grilled chicken plate'"
+              [className]="'w-[9rem]  mx-auto absolute bottom-[2rem] -right-9 rotate-16 z-[50]'"
+            ></app-image>
+
           </div>
 
           <app-happy-customer-badge [className]="'absolute top-24 -right-0'"></app-happy-customer-badge>
