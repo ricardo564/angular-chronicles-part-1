@@ -155,8 +155,10 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
           </div>
         </div>
 
-        <div class="w-[17rem]">
-          <h3 class="text-red-500 text-xl font-semibold">Get in touch</h3>
+        <div class="w-[17rem] flex flex-col gap-4">
+          <h3 class="text-red-500 text-xl font-semibold">
+            Get in touch
+          </h3>
           <p class="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor
