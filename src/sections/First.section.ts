@@ -151,6 +151,12 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
               [className]="'w-[10rem]  mx-auto absolute -bottom-[5rem] left-[5rem] rotate-16 z-[50]'"
             ></app-image>
 
+            <app-image
+              [src]="'assets/images/buddha-bowl-sauce.webp'"
+              [alt]="'Buddha bowl sauce'"
+              [className]="'w-[12rem]  mx-auto absolute bottom-[1rem] -left-[5rem] rotate-16 z-[50]'"
+            ></app-image>
+
           </div>
 
           <app-happy-customer-badge [className]="'absolute top-24 -right-0'"></app-happy-customer-badge>
