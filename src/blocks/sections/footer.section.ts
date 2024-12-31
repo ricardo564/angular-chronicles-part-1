@@ -8,11 +8,13 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
   standalone: true,
   imports: [ImageComponent, ButtonComponent],
   template: `
-    <footer class="bg-white py-12 px-4 mt-auto bottom-0 pt-64">
+    <footer
+      class="bg-white py-12 px-4 mt-auto bottom-0 pt-64 max-w-[1400px] mx-auto flex flex-col items-center justify-center"
+    >
       <div
-        class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1400px]"
+        class="flex  flex-wrap md:flex-nowrap flex-row  justify-between  w-full gap-8"
       >
-        <div class="space-y-4">
+        <div class="w-full min-w-[17rem] max-w-[21rem]">
           <h2 class="text-red-500 text-2xl font-bold">Foodhut</h2>
           <p class="text-gray-600 max-w-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -59,106 +61,108 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
           </div>
         </div>
 
-        <div class="space-y-4">
-          <h3 class="text-red-500 text-xl font-semibold">About Us</h3>
-          <ul class="space-y-2">
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-              >
-                Service Us
-              </a>
-            </li>
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-              >
-                Company
-              </a>
-            </li>
-          </ul>
+        <div
+          class="flex flex-wrap md:flex-nowrap flex-row justify-between max-w-[20rem]"
+        >
+          <div class="min-w-[10rem]">
+            <h3 class="text-red-500 text-xl font-semibold">About Us</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Service Us
+                </a>
+              </li>
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Company
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="min-w-[10rem]">
+            <h3 class="text-red-500 text-xl font-semibold">Company</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Partnership
+                </a>
+              </li>
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Terms of Use
+                </a>
+              </li>
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  [href]="[getRandomLinkForRedirection()]"
+                  class="text-gray-600 hover:text-red-500"
+                  rel="noopener"
+                  target="_blank"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="space-y-4">
-          <h3 class="text-red-500 text-xl font-semibold">Company</h3>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-              >
-                Partnership
-              </a>
-            </li>
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-              >
-                Terms of Use
-              </a>
-            </li>
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-                >Privacy</a
-              >
-            </li>
-            <li>
-              <a
-                [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-red-500"
-                rel="noopener"
-                target="_blank"
-                >Sitemap</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="space-y-4">
-          <h3 class="text-red-500 text-xl font-semibold">
-            Get in touch
-          </h3>
+        <div class="w-[17rem]">
+          <h3 class="text-red-500 text-xl font-semibold">Get in touch</h3>
           <p class="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex lg:flex-row flex-col gap-2">
             <input
               type="email"
               placeholder="Email"
@@ -188,7 +192,6 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
     </footer>
   `,
 })
-
 export class FooterComponent {
   getRandomLinkForRedirection() {
     return getRandomLinkForRedirection();
