@@ -52,9 +52,9 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
       ></app-image>
 
       <app-image
-        [src]="'assets/images/yellow-overlay.webp'"
+        [src]="'assets/svg/yellow-overlay.svg'"
         [alt]="'Yellow overlay'"
-        [className]="'lg:w-[36rem] lg:h-[26rem] h-auto absolute -top-[8rem] right-0 z-[-1]'"
+        [className]="'lg:w-[36rem] lg:h-[26rem] h-auto absolute -top-[8rem] -right-36 z-[-1]'"
       ></app-image>
 
       <div class="w-full lg:w-1/2 my-auto">
