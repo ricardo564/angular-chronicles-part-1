@@ -15,6 +15,7 @@ import { ImageComponent } from "./Image.component";
           [alt]="name"
           [className]="'w-12 h-12 rounded'"
         />
+
         <div>
           <p class="font-medium">{{ name }}</p>
           <div class="flex items-center space-x-2">
@@ -28,6 +29,7 @@ import { ImageComponent } from "./Image.component";
             />
             }
           </div>
+
           <p class="text-sm text-gray-600">{{ "$" + price }}</p>
         </div>
       </div>
