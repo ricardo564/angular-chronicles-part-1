@@ -6,9 +6,9 @@ import { ImageComponent } from "./Image.component";
   standalone: true,
   imports: [ImageComponent],
   template: `
-    <div class="absolute inset-0 bg-transparent p-2  {{ className }}">
+    <div class="absolute inset-0 bg-transparent p-2 mt-[3rem] lg:mt-[5rem] -ml-24 lg:-ml-9 {{ className }}">
       <div
-        class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] lg:mt-[5rem] -ml-4 lg:-ml-9"
+        class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg"
       >
         <app-image
           [src]="imageSrc"
