@@ -8,12 +8,40 @@
   <path
     d="M50.2022 3.44144C49.9047 1.15128 52.198 -0.602085 54.3301 0.285391L63.9244 4.27904C66.0565 5.16651 66.4283 8.02922 64.5937 9.4319L56.3379 15.744C54.5033 17.1467 51.8382 16.0373 51.5408 13.7472L50.2022 3.44144Z"
     fill="#F54748"
-  />
+  >
+    <animate
+      attributeName="opacity"
+      values="1;0.5;1"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+    <animateTransform
+      attributeName="transform"
+      type="scale"
+      values="1;1.1;1"
+      dur="20s"
+      repeatCount="indefinite"
+    />
+  </path>
   <path
     d="M1 324C29.5 310.167 95.2491 260.452 59 231C27 205 -18.5 297.5 59 299C136.5 300.5 138 115.5 59 9"
     stroke="#FDC55E"
     stroke-width="2"
     stroke-linejoin="round"
     stroke-dasharray="8 8"
-  />
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      values="0;100"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </path>
+  <circle r="4" fill="#F54748">
+    <animateMotion
+      dur="20s"
+      repeatCount="indefinite"
+      path="M1 324C29.5 310.167 95.2491 260.452 59 231C27 205 -18.5 297.5 59 299C136.5 300.5 138 115.5 59 9"
+    />
+  </circle>
 </svg>
