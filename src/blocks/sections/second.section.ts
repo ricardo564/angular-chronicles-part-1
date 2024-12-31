@@ -12,7 +12,7 @@ import { ImageComponent } from "@/components/Image.component";
       <app-image
         [src]="'assets/svg/circular-dots-pattern.svg'"
         [alt]="'Circular dots pattern'"
-        [className]="'w-[160px] h-auto absolute top-[16rem] -left-[7rem]'"
+        [className]="'w-[160px] h-auto absolute top-[27rem] -left-[7rem]'"
       ></app-image>
 
       <app-image
