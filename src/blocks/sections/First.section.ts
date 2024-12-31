@@ -4,7 +4,7 @@ import { ButtonComponent } from "@/components/Button.component";
 import { InputTextComponent } from "@/components/InputText.component";
 import { ImageComponent } from "@/components/Image.component";
 import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
-import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.component";
+import { CustomerBadgeComponent } from "@/components/CustomerBadge.component";
 
 @Component({
   selector: "app-first-section",
@@ -15,7 +15,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
     InputTextComponent,
     ImageComponent,
     DownloadShortcutBlock,
-    HappyCustomerBadgeComponent,
+    CustomerBadgeComponent,
   ],
   template: `
     <section
@@ -206,9 +206,9 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           ></app-image>
         </div>
 
-        <app-happy-customer-badge
+        <app-customer-badge
           [className]="'absolute top-24 -right-[6rem] lg:right-0 z-[50]'"
-        ></app-happy-customer-badge>
+        ></app-customer-badge>
 
         <app-image
           [src]="'assets/svg/heart-curved-path.svg'"

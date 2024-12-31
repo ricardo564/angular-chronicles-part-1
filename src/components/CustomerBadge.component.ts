@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 import { ImageComponent } from "@/components/Image.component";
 
 @Component({
-  selector: "app-happy-customer-badge",
+  selector: "app-customer-badge",
   standalone: true,
   imports: [ImageComponent],
   template: `
@@ -38,7 +38,7 @@ import { ImageComponent } from "@/components/Image.component";
     </div>
   `,
 })
-export class HappyCustomerBadgeComponent {
+export class CustomerBadgeComponent {
   @Input() rating: number = 4.9;
   @Input() reviews: number = 1989;
   @Input() title: string = "Our Happy Customer";
