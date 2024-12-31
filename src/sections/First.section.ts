@@ -4,11 +4,12 @@ import { ButtonComponent } from "@/components/Button.component";
 import { InputTextComponent } from "@/components/InputText.component";
 import { ImageComponent } from "@/components/Image.component";
 import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
+import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.component";
 
 @Component({
   selector: "app-first-section",
   standalone: true,
-  imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent, DownloadShortcutBlock],
+  imports: [TagComponent, ButtonComponent, InputTextComponent, ImageComponent, DownloadShortcutBlock, HappyCustomerBadgeComponent],
   template: `
     <section
       class="mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center justify-between min-h-[600px] relative"
@@ -112,6 +113,8 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
               [className]="'w-full h-auto inset-0 top-8 md:top-12 object-contain max-h-[300px] md:max-h-[500px] absolute'"
             ></app-image>
           </div>
+
+          <app-happy-customer-badge [className]="'absolute top-24 -right-0'"></app-happy-customer-badge>
 
           <div class="absolute inset-0 bg-transparent p-2">
             <div
