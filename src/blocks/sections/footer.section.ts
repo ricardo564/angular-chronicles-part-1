@@ -14,7 +14,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
       <div
         class="flex  flex-wrap md:flex-nowrap flex-row  justify-between  w-full gap-8"
       >
-        <div class="w-full min-w-[17rem] max-w-[21rem]">
+        <div class="w-full min-w-[17rem] max-w-[21rem] flex flex-col gap-4">
           <h2 class="text-red-500 text-2xl font-bold">Foodhut</h2>
           <p class="text-gray-600 max-w-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
