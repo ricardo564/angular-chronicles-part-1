@@ -15,4 +15,5 @@ import { ButtonComponent } from "@/components/Button.component";
     </a>
   `,
 })
+
 export class DownloadShortcutBlock {}
