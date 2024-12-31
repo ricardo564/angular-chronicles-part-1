@@ -207,7 +207,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
         </div>
 
         <app-happy-customer-badge
-          [className]="'absolute top-24 -right-0 z-[50]'"
+          [className]="'absolute top-24 -right-[6rem] lg:right-0 z-[50]'"
         ></app-happy-customer-badge>
 
         <app-image
