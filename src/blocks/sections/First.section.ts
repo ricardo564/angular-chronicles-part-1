@@ -51,6 +51,12 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
         [className]="'w-16 h-16  absolute bottom-0 left-0 '"
       ></app-image>
 
+      <app-image
+        [src]="'assets/images/yellow-overlay.webp'"
+        [alt]="'Yellow overlay'"
+        [className]="'lg:w-[36rem] lg:h-[26rem] h-auto absolute -top-[8rem] right-0 z-[-1]'"
+      ></app-image>
+
       <div class="w-full lg:w-1/2 my-auto">
         <div class="flex flex-col gap-4 mb-5">
           <app-tag class="mt-4 lg:-mt-8 text-sm">
