@@ -16,7 +16,6 @@
       transform-origin: center;
     }
 
-
     @keyframes pulse {
       0%, 100% {
         transform: scale(1);
