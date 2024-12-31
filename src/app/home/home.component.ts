@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FirstSection } from '@/sections/First.section';
+import { FirstSection } from '@/blocks/sections/First.section';
 
 @Component({
   selector: 'home',
