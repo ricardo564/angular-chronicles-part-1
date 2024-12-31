@@ -35,7 +35,7 @@
   >
     <animate
       attributeName="stroke-dashoffset"
-      values="0;16"
+      values="16;0"
       dur="1s"
       repeatCount="indefinite"
     />
