@@ -106,7 +106,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
 
           <app-button
             [className]="
-              'flex flex-row-reverse items-center justify-center gap-2 text-gray-700 hover:bg-gray-100 hover:text-yellow-500 h-12'
+              'flex flex-row-reverse items-center justify-center gap-2 text-gray-700 hover:bg-gray-100 hover:text-yellow-500 h-12 truncate'
             "
             [title]="'Watch Video'"
             [label]="'Watch Video'"
@@ -114,14 +114,14 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             <app-image
               [src]="'assets/svg/arrowRight.svg'"
               [alt]="'Arrow right'"
-              [className]="'w-[3.25rem] h-[3.25rem] mt-2'"
+              [className]="'min-w-[3.25rem] h-[3.25rem] mt-2 flex-grow-0'"
             ></app-image>
           </app-button>
         </div>
       </div>
 
       <div
-        class="w-full md:w-1/2 relative my-8 md:my-auto flex items-center justify-center"
+        class="w-full md:w-1/2 relative my-8 md:my-auto hidden md:flex items-center justify-center"
       >
         <div
           class="absolute inset-0 bg-transparent p-2 h-16 -mt-[4.5rem] z-[99]"
