@@ -177,7 +177,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             [src]="'assets/images/grilled-chicken-plate.webp'"
             [alt]="'Grilled chicken plate'"
             [className]="
-              'w-[10rem] mx-auto absolute bottom-[2rem] -right-9 rotate-16 z-[50]'
+              'w-[5rem] lg:w-[10rem] mx-auto absolute bottom-[2rem] -right-9 rotate-16 z-[50]'
             "
           ></app-image>
 
@@ -185,7 +185,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             [src]="'assets/images/salmon-salad-plate.webp'"
             [alt]="'Salmon salad plate'"
             [className]="
-              'w-[10rem] mx-auto absolute -bottom-[5rem] right-[5rem] rotate-16 z-[50]'
+              'w-[5rem] lg:w-[10rem] mx-auto absolute -bottom-[3rem] lg:-bottom-[5rem] right-[2rem] lg:right-[5rem] rotate-16 z-[50]'
             "
           ></app-image>
 
@@ -193,7 +193,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             [src]="'assets/images/grilled-salmon-vegetables.webp'"
             [alt]="'Grilled salmon vegetables'"
             [className]="
-              'w-[10rem] mx-auto absolute -bottom-[5rem] left-[5rem] rotate-16 z-[50]'
+              'w-[5rem] lg:w-[10rem] mx-auto absolute -bottom-[4rem] lg:-bottom-[5rem] left-[3.5rem] lg:left-[5rem] rotate-16 z-[50]'
             "
           ></app-image>
 
@@ -201,7 +201,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
             [src]="'assets/images/buddha-bowl-sauce.webp'"
             [alt]="'Buddha bowl sauce'"
             [className]="
-              'w-[10rem] mx-auto absolute bottom-[1rem] -left-[3rem] rotate-16 z-[50]'
+              'w-[5rem] lg:w-[10rem] mx-auto absolute bottom-[1rem] -left-[2rem] lg:-left-[5rem] rotate-16 z-[50]'
             "
           ></app-image>
         </div>
