@@ -96,6 +96,14 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
       </div>
 
       <div class="w-full md:w-1/2 relative my-8 md:my-auto flex items-center justify-center">
+        <div class="absolute inset-0 bg-transparent p-2 h-16 -mt-[4.5rem] z-[99]">
+          <app-image
+            [src]="'assets/svg/fire.svg'"
+            [alt]="'Fire'"
+            [className]="'w-10 h-10 md:w-16 md:h-16  mx-auto'"
+          ></app-image>
+        </div>
+
           <div class="top-0 right-0 bg-red-500 rounded-full w-[300px] md:w-[500px] -z-0 relative">
             <div class="z-10 max-h-[300px] md:max-h-[500px]">
               <app-image
