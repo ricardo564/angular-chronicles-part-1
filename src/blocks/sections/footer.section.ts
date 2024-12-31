@@ -13,7 +13,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
         class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1400px]"
       >
         <div class="space-y-4">
-          <h2 class="text-[#FF5956] text-2xl font-bold">Foodhut</h2>
+          <h2 class="text-red-500 text-2xl font-bold">Foodhut</h2>
           <p class="text-gray-600 max-w-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor
@@ -60,12 +60,12 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-[#FF5956] text-xl font-semibold">About Us</h3>
+          <h3 class="text-red-500 text-xl font-semibold">About Us</h3>
           <ul class="space-y-2">
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
               >
@@ -75,7 +75,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
               >
@@ -85,7 +85,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
               >
@@ -95,7 +95,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
               >
@@ -106,12 +106,12 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-[#FF5956] text-xl font-semibold">Company</h3>
+          <h3 class="text-red-500 text-xl font-semibold">Company</h3>
           <ul class="space-y-2">
             <li>
               <a
                 href="#"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
               >
@@ -121,7 +121,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
               >
@@ -131,7 +131,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
                 >Privacy</a
@@ -140,7 +140,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <li>
               <a
                 [href]="[getRandomLinkForRedirection()]"
-                class="text-gray-600 hover:text-[#FF5956]"
+                class="text-gray-600 hover:text-red-500"
                 rel="noopener"
                 target="_blank"
                 >Sitemap</a
@@ -150,7 +150,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-[#FF5956] text-xl font-semibold">
+          <h3 class="text-red-500 text-xl font-semibold">
             Get in touch
           </h3>
           <p class="text-gray-600">
@@ -162,11 +162,11 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <input
               type="email"
               placeholder="Email"
-              class="flex-1 px-4 py-2 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-[#FF5956]"
+              class="flex-1 px-4 py-2 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-red-500"
             />
             <app-button
               [className]="
-                'p-16  bg-[#FF5956] text-white hover:bg-[#ff4542] transition-colors rounded-full'
+                'p-16  bg-red-500 text-white hover:bg-[#ff4542] transition-colors rounded-full'
               "
             >
               Subscribe
