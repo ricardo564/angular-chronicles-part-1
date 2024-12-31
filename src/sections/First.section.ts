@@ -207,6 +207,14 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           [className]="'absolute top-24 -right-0'"
         ></app-happy-customer-badge>
 
+        <app-image
+          [src]="'assets/svg/heart-curved-path.svg'"
+          [alt]="'Heart curved path'"
+          [className]="
+            'w-[7rem] h-[20rem]  absolute -top-16 right-0'
+          "
+        ></app-image>
+
         <div class="absolute inset-0 bg-transparent p-2">
           <div
             class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] md:mt-[5rem] -ml-4 md:-ml-9"
