@@ -119,7 +119,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           <div class="top-0 right-0 bg-red-500 rounded-full w-[300px] md:w-[500px] -z-0 relative">
             <div class="z-10 max-h-[300px] md:max-h-[500px]">
               <app-image
-                [src]="'/assets/images/happy-customer.png'"
+                [src]="'/assets/images/happy-customer.webp'"
                 [alt]="'Happy customer'"
                 [className]="
                   'w-full h-auto object-contain max-h-[300px] md:max-h-[500px] rounded-b-full'
@@ -141,7 +141,7 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
               class="flex items-center space-x-2 bg-white w-max p-1 border border-gray-100 rounded-lg shadow-lg mt-[3rem] md:mt-[5rem] -ml-4 md:-ml-9"
             >
               <app-image
-                [src]="'/assets/images/pizza.png'"
+                [src]="'/assets/images/pizza.webp'"
                 [alt]="'Italian Pizza'"
                 [className]="'w-12 h-12 rounded '"
               />
