@@ -55,4 +55,12 @@
       repeatCount="indefinite"
     />
   </path>
+
+    <circle r="4" fill="#F54748">
+    <animateMotion
+      dur="10s"
+      repeatCount="indefinite"
+      path="M1 1.5C54.8333 6.5 108.7 15.5 133.5 141.5"
+    />
+  </circle>
 </svg>
