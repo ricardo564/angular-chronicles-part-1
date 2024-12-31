@@ -104,6 +104,12 @@ import { HappyCustomerBadgeComponent } from "@/components/HappyCustomerBadge.com
           ></app-image>
         </div>
 
+        <app-image
+          [src]="'assets/svg/coriander-leaves.svg'"
+          [alt]="'Coriander leaves'"
+          [className]="'w-[9rem]  mx-auto absolute -top-[3.5rem] right-[8rem] rotate-16 z-[50]'"
+        ></app-image>
+
           <div class="top-0 right-0 bg-red-500 rounded-full w-[300px] md:w-[500px] -z-0 relative">
             <div class="z-10 max-h-[300px] md:max-h-[500px]">
               <app-image
