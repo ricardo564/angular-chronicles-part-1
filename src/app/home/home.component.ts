@@ -11,7 +11,7 @@ import { AppSection } from '@/blocks/sections/app.section';
   standalone: true,
   imports: [CommonModule, IntroSection, SpecialOffersSection, AboutUsSection, MenuSection, AppSection],
   template: `
-    <div class="grid grid-cols-1 gap-16">
+    <div class="grid grid-cols-1 gap-16 pt-[10rem]">
       <intro-section></intro-section>
       <special-offers-section></special-offers-section>
       <about-us-section></about-us-section>
