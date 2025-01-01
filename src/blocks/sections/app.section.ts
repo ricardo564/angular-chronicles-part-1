@@ -9,9 +9,9 @@ import { ImageComponent } from "@/components/Image.component";
   template: `
     <section
       id="app-section"
-      class="relative bg-gradient-to-b from-white via-white to-[#FFF9F3] p-20 min-h-[600px]"
+      class="relative bg-gradient-to-b from-white via-white to-[#FFF9F3] p-20 min-h-[600px] w-screen"
     >
-      <div class="container mx-auto">
+      <div class="container mx-auto mx-auto md:max-w-[900px] lg:max-w-[1400px]">
         <div
           class="flex flex-col lg:flex-row items-center justify-between gap-12"
         >

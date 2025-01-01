@@ -9,7 +9,7 @@ import { ButtonComponent } from "@/components/Button.component";
   standalone: true,
   imports: [CommonModule, ProductCardComponent, ButtonComponent],
   template: `
-    <section id="menu-section" class="py-16 px-4 max-w-7xl mx-auto min-h-[600px]">
+    <section id="menu-section" class="py-16 px-4 max-w-7xl mx-auto min-h-[600px] md:max-w-[900px] lg:max-w-[1400px]">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold">
           Menu That

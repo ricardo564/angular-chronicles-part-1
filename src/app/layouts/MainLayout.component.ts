@@ -19,7 +19,7 @@ import { ImageComponent } from "@/components/Image.component";
       ></app-image>
 
       <main
-        class="flex flex-col w-full mx-auto md:max-w-[900px] lg:max-w-[1400px]"
+        class="grid grid-cols-1 w-full mx-auto"
       >
         <router-outlet></router-outlet>
       </main>

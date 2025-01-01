@@ -17,7 +17,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
   template: `
     <section
       id="about-us-section"
-      class="relative min-h-[38rem] flex items-center py-16 mx-auto flex-co justify-between"
+      class="relative min-h-[38rem] flex items-center py-16 mx-auto flex-co justify-between mx-auto md:max-w-[900px] lg:max-w-[1400px]"
     >
       <app-image
         [src]="'assets/svg/circular-dots-pattern.svg'"

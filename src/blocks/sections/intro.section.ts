@@ -22,7 +22,7 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
   template: `
     <section
       id="intro-section"
-      class="mx-auto w-full px-4 py-12 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[38rem] relative"
+      class="mx-auto w-full px-4 py-12 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[38rem] relative md:max-w-[900px] lg:max-w-[1400px]"
     >
       <app-image
         [src]="'assets/svg/dashedArrowPath.svg'"
