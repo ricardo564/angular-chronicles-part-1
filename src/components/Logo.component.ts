@@ -1,11 +1,10 @@
 import { Component } from "@angular/core";
 import { ImageComponent } from "./Image.component";
-import { RouterLink } from "@angular/router";
 
 @Component({
   selector: "app-logo",
   standalone: true,
-  imports: [ImageComponent, RouterLink],
+  imports: [ImageComponent,],
   template: `
     <a class="flex items-center" [href]="'#intro-section'" rel="home">
       <app-image
