@@ -27,35 +27,36 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
       <app-image
         [src]="'assets/svg/yellow-circle-overlay.svg'"
         [alt]="'Yellow overlay'"
-        [className]="'w-[36rem] h-[26rem] absolute -bottom-[2rem] -left-36 z-[-1] scale-150'"
+        [className]="'w-[36rem] h-[26rem] absolute lg:-bottom-[2rem] top-16 lg:-left-36 z-[-1] scale-150'"
       ></app-image>
 
       <app-image
         [src]="'assets/svg/scattered-spices.svg'"
         [alt]="'Scattered spices'"
         [className]="
-          'w-[10rem] mx-auto absolute left-[25rem] top-[5rem] z-[50] rotate-60'
+          'w-[10rem] mx-auto absolute left-[33rem] lg:left-[25rem] lg:top-[5rem] top-[4rem] z-[50] rotate-60'
         "
       ></app-image>
 
-      <div class="container mx-auto px-4 flex flex-col justify-between">
+      <div class="container mx-auto px-4 flex flex-col justify-between lg:-mt-16">
         <div
           class="flex flex-col lg:flex-row justify-between items-center gap-12"
         >
           <div class="rounded-lg p-4 mx-auto">
-            <div class="relative w-full md:w-1/2 ">
+            <div class="relative w-full md:w-1/2 h-[17rem]">
               <div
                 class="top-0 right-0 bg-red-500 rounded-full w-[25rem] h-[25rem] -z-0 relative"
                 style="background-image: url('/assets/images/circular-food-grid.webp'); background-size: cover; background-position: center;"
               ></div>
+
               <div
-                class="absolute inset-0 top-16 w-[25rem] lg:w-[35rem] -ml-1 lg:-ml-[5rem] -mb-[4rem] rotate-180"
+                class="relative lg:absolute inset-0 lg:top-16 w-[25rem] lg:w-[35rem] -ml-1 lg:-ml-[5rem] -mb-[4rem] lg:-mb-[10rem] rotate-180 -top-[28rem]"
               >
                 <app-image
                   [src]="'assets/svg/semicircle.svg'"
                   [alt]="'Dashed arrow path'"
                   [className]="
-                    'w-full h-auto inset-0 top-2 lg:top-16 object-contain max-h-[31rem] left-12 -bottom-[8rem]'
+                    'w-full h-auto inset-0 lg:top-16 object-contain max-h-[31rem] left-12 -bottom-[8rem]'
                   "
                 ></app-image>
               </div>
@@ -74,7 +75,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             </div>
 
             <div
-              class="absolute left-[32rem] top-[13rem] w-[16rem]  object-contain h-[10rem] rounded-b-full -mt-[10rem] -rotate-45"
+              class="absolute left-[32rem] top-[13rem] w-[16rem]  object-contain h-[10rem] rounded-b-full -mt-[10rem] -rotate-45 hidden lg:block"
             >
               <app-image
                 [src]="'/assets/svg/dashedArrowPath.svg'"
@@ -89,7 +90,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
               [src]="'assets/svg/coriander-leaves.svg'"
               [alt]="'Coriander leaves'"
               [className]="
-                'lg:w-[9rem] w-[8rem] mx-auto absolute left-[10rem] top-[25rem] z-[50] rotate-60'
+                'lg:w-[9rem] w-[8rem] mx-auto absolute left-[18rem] lg:left-[15rem] top-[25rem] lg:top-[20rem] z-[50] rotate-60'
               "
             ></app-image>
 
@@ -97,7 +98,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
               [src]="'assets/svg/helix-curve.svg'"
               [alt]="'Helix curve'"
               [className]="
-                'w-[6rem] mx-auto absolute left-[30rem] top-[13rem] z-[50] rotate-60'
+                'w-[6rem] mx-auto absolute left-[30rem] top-[13rem] z-[50] rotate-60 hidden lg:block'
               "
             ></app-image>
           </div>
