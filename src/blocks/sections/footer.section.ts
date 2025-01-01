@@ -2,11 +2,12 @@ import { Component } from "@angular/core";
 import { ImageComponent } from "@/components/Image.component";
 import { ButtonComponent } from "@/components/Button.component";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
+import { InputTextComponent } from "@/components/InputText.component";
 
 @Component({
   selector: "app-footer",
   standalone: true,
-  imports: [ImageComponent, ButtonComponent],
+  imports: [ImageComponent, ButtonComponent, InputTextComponent],
   template: `
     <footer
       class="bg-white py-12 px-4 mt-auto bottom-0 pt-64 max-w-[1400px] mx-auto flex flex-col items-center justify-center"
@@ -164,12 +165,14 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             eiusmod tempor
           </p>
 
-          <div class="flex flex-row gap-2">
-            <input
+          <div class="flex flex-row gap-5 items-center justify-center">
+            <app-input-text
+              [inputClassName]="'min-w-[12rem] w-full px-4 py-2 rounded-full bg-gray-200'"
               type="email"
               placeholder="Email"
-              class="min-w-[12rem] w-full px-4 py-2 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-red-500"
+              class="min-w-[12rem] w-full px-4 py-2 rounded-lg "
             />
+
             <app-button
               [className]="
                 'p-16  bg-red-500 text-white hover:bg-[#ff4542] transition-colors rounded-full'
