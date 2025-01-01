@@ -114,7 +114,7 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
         <div
           class="flex items-center justify-center lg:justify-start space-x-4"
         >
-          <app-download-shortcut></app-download-shortcut>
+          <download-shortcut></download-shortcut>
 
           <app-button
             [className]="
