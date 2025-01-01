@@ -1,17 +1,16 @@
 import { Component } from "@angular/core";
-import { ButtonComponent } from "@/components/Button.component";
 
 @Component({
-  selector: "app-download-shortcut",
+  selector: "download-shortcut",
   standalone: true,
-  imports: [ButtonComponent],
   template: `
-    <a href="https://www.linkedin.com/in/ricardo-camilo-492b95b3/" target="_blank">
-      <app-button
-        [className]="'bg-red-500 text-white hover:bg-red-600 truncate'"
-        [title]="'Download App'"
-        label="Download App"
-      ></app-button>
+    <a
+      [href]="'#app-section'"
+      class="rounded-full inline-flex items-center px-4 py-2 bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors"
+      role="button"
+      aria-label="Go to download application section"
+    >
+      <span class="truncate">Download App</span>
     </a>
   `,
 })
