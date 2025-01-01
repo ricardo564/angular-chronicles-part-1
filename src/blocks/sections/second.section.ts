@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ProductCardComponent } from "@/components/ProductCard.component";
 import { ImageComponent } from "@/components/Image.component";
+import { Product } from "@/types/product";
 
 @Component({
   selector: "app-second-section",
@@ -43,7 +44,7 @@ import { ImageComponent } from "@/components/Image.component";
 })
 
 export class SecondSection {
-  products = [
+  products: Product[] = [
     {
       id: 1,
       name: "Kebab",
@@ -52,6 +53,7 @@ export class SecondSection {
       description:
         "A delicious dish made from meat, often served with vegetables and rice.",
       price: 15.99,
+      category: "dinner",
     },
     {
       id: 2,
@@ -61,6 +63,7 @@ export class SecondSection {
       description:
         "A popular Indian dish made from chunks of chicken marinated in spices and yogurt.",
       price: 12.99,
+      category: "dinner",
     },
     {
       id: 3,
@@ -70,6 +73,7 @@ export class SecondSection {
       description:
         "A Chinese stir-fried noodle dish that is popular in India.",
       price: 10.99,
+      category: "dinner",
     },
     {
       id: 4,
@@ -79,6 +83,7 @@ export class SecondSection {
       description:
         "A Middle Eastern dish made from meat, often served with pita bread.",
       price: 13.99,
+      category: "dinner",
     },
   ];
 }
