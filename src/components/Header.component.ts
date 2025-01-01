@@ -28,9 +28,9 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
 
 export class HeaderComponent {
   menuItems = [
-    { label: "Today Special Offers", link: "#" },
-    { label: "Why FoodHut", link: "#" },
-    { label: "Our Menu", link: "#" },
-    { label: "Our Popular Food", link: "#" },
+    { label: "Today Special Offers", link: "#special-offers-section" },
+    { label: "Why FoodHut", link: "#about-us-section" },
+    { label: "Our Menu", link: "#menu-section" },
+    { label: "Our Popular Food", link: "#menu-section" },
   ];
 }
