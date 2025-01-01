@@ -221,7 +221,13 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
         <app-image
           [src]="'assets/svg/heart-curved-path.svg'"
           [alt]="'Heart curved path'"
-          [className]="'w-[7rem] h-[20rem]  absolute -top-16 right-0'"
+          [className]="'w-[7rem] h-[20rem]  absolute -top-16 right-0 lg:block hidden'"
+        ></app-image>
+
+        <app-image
+          [src]="'assets/svg/dotted-arrow-up.svg'"
+          [alt]="'Dotted arrow up'"
+          [className]="'w-[4rem] h-[20rem]  absolute -top-16  right-16 md:-right-[5rem] lg:hidden block'"
         ></app-image>
 
         <app-food-rating-card
