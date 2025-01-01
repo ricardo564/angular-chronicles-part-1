@@ -10,7 +10,7 @@ import { InputTextComponent } from "@/components/InputText.component";
   imports: [ImageComponent, ButtonComponent, InputTextComponent],
   template: `
     <footer
-      class="bg-white py-12 px-4 mt-auto bottom-0 pt-64 max-w-[1300px] mx-auto flex flex-col items-center justify-center"
+      class="bg-white py-12 px-4 mt-auto bottom-0 max-w-[1300px] mx-auto flex flex-col items-center justify-center"
     >
       <div
         class="flex  flex-wrap md:flex-nowrap flex-row  justify-between  w-max gap-8"
