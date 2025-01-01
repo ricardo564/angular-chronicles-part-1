@@ -1,0 +1,156 @@
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { ImageComponent } from "@/components/Image.component";
+import { ServiceGridComponent } from "@/components/ServiceGrid.component";
+import { ServiceItem } from "@/types/ServiceItem";
+import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
+
+@Component({
+  selector: "app-third-section",
+  standalone: true,
+  imports: [
+    CommonModule,
+    ImageComponent,
+    ServiceGridComponent,
+    ImageComponent,
+  ],
+  template: `
+    <section
+      class="relative min-h-[38rem] flex items-center py-16 mx-auto flex-co justify-between"
+    >
+      <app-image
+        [src]="'assets/svg/circular-dots-pattern.svg'"
+        [alt]="'Circular dots pattern'"
+        [className]="'w-[160px] h-auto absolute top-8 -left-[7rem]'"
+      ></app-image>
+
+      <app-image
+        [src]="'assets/svg/yellow-overlay.svg'"
+        [alt]="'Yellow overlay'"
+        [className]="'w-[36rem] h-[26rem] absolute -bottom-[2rem] -left-36 z-[-1]'"
+      ></app-image>
+
+      <app-image
+        [src]="'assets/svg/scattered-spices.svg'"
+        [alt]="'Scattered spices'"
+        [className]="
+          'w-[10rem] mx-auto absolute left-[25rem] top-[5rem] z-[50] rotate-60'
+        "
+      ></app-image>
+
+      <div class="container mx-auto px-4 flex flex-col justify-between">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-12"
+        >
+          <div class="rounded-lg p-4 mx-auto">
+            <div class="relative w-full md:w-1/2 ">
+              <div
+                class="top-0 right-0 bg-red-500 rounded-full w-[25rem] h-[25rem] -z-0 relative"
+              ></div>
+              <div
+                class="absolute inset-0 top-16 w-[25rem] lg:w-[35rem] -ml-1 lg:-ml-[5rem] -mb-[4rem] rotate-180"
+              >
+                <app-image
+                  [src]="'assets/svg/semicircle.svg'"
+                  [alt]="'Dashed arrow path'"
+                  [className]="
+                    'w-full h-auto inset-0 top-2 lg:top-16 object-contain max-h-[31rem] left-12 -bottom-[8rem]'
+                  "
+                ></app-image>
+              </div>
+
+              <div
+                class="absolute inset-0 top-[2.5rem] w-[25rem]  object-contain h-[25rem] rounded-b-full -mt-[10rem]"
+              >
+                <app-image
+                  [src]="'/assets/images/chef-presenting-dish.webp'"
+                  [alt]="'Chef presenting dish'"
+                  [className]="
+                    'absolute inset-0 top-[1.7rem] w-full  object-contain rounded-b-full'
+                  "
+                />
+              </div>
+            </div>
+
+            <div
+              class="absolute left-[32rem] top-[13rem] w-[16rem]  object-contain h-[10rem] rounded-b-full -mt-[10rem] -rotate-45"
+            >
+              <app-image
+                [src]="'/assets/svg/dashedArrowPath.svg'"
+                [alt]="'Curved dotted arrow'"
+                [className]="
+                  'w-full rounded-b-full'
+                "
+              />
+            </div>
+
+            <app-image
+              [src]="'assets/svg/coriander-leaves.svg'"
+              [alt]="'Coriander leaves'"
+              [className]="
+                'lg:w-[9rem] w-[8rem] mx-auto absolute left-[10rem] top-[25rem] z-[50] rotate-60'
+              "
+            ></app-image>
+          </div>
+
+          <div class="w-full md:w-1/2 max-w-[43rem] text-black pt-32">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              We are <span class="text-red-500">more</span> than<br />
+              <span class="text-amber-400">multiple</span> service
+            </h2>
+
+            <p class="text-gray-400 mb-8">
+              This is a type of restaurant which typically serves food and
+              drink, in addition to light refreshments such as baked goods or
+              snacks. The term comes from the french word meaning food.
+            </p>
+
+            <app-service-grid [serviceItems]="services"></app-service-grid>
+
+            <a
+              [href]="[getRandomLinkForRedirection()]"
+              class="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full transition-colors mt-6"
+              rel="noopener"
+              target="_blank"
+            >
+              About Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  `,
+})
+
+export class ThirdSection {
+  services: ServiceItem[] = [
+    {
+      path: "/assets/svg/shopping-cart.svg",
+      text: "Online Order",
+    },
+    {
+      path: "/assets/svg/clock.svg",
+      text: "24/7 Service",
+    },
+    {
+      path: "/assets/svg/calendar-check.svg",
+      text: "Pre-Reservation",
+    },
+    {
+      path: "/assets/svg/calendar-check.svg",
+      text: "Organized Foodhut Place",
+    },
+    {
+      path: "/assets/svg/calendar-check.svg",
+      text: "Super Chef",
+    },
+    {
+      path: "/assets/svg/calendar-check.svg",
+      text: "Clean Kitchen",
+    },
+  ];
+
+  getRandomLinkForRedirection() {
+    return getRandomLinkForRedirection();
+  }
+}
