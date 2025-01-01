@@ -25,9 +25,9 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
       ></app-image>
 
       <app-image
-        [src]="'assets/svg/yellow-overlay.svg'"
+        [src]="'assets/svg/yellow-circle-overlay.svg'"
         [alt]="'Yellow overlay'"
-        [className]="'w-[36rem] h-[26rem] absolute -bottom-[2rem] -left-36 z-[-1]'"
+        [className]="'w-[36rem] h-[26rem] absolute -bottom-[2rem] -left-36 z-[-1] scale-150'"
       ></app-image>
 
       <app-image
