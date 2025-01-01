@@ -46,6 +46,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             <div class="relative w-full md:w-1/2 ">
               <div
                 class="top-0 right-0 bg-red-500 rounded-full w-[25rem] h-[25rem] -z-0 relative"
+                style="background-image: url('/assets/images/circular-food-grid.webp'); background-size: cover; background-position: center;"
               ></div>
               <div
                 class="absolute inset-0 top-16 w-[25rem] lg:w-[35rem] -ml-1 lg:-ml-[5rem] -mb-[4rem] rotate-180"
