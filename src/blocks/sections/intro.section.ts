@@ -8,7 +8,7 @@ import { CustomerBadgeComponent } from "@/components/CustomerBadge.component";
 import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
 
 @Component({
-  selector: "app-first-section",
+  selector: "intro-section",
   standalone: true,
   imports: [
     TagComponent,
@@ -21,6 +21,7 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
   ],
   template: `
     <section
+      id="intro-section"
       class="mx-auto w-full px-4 py-12 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[38rem] relative"
     >
       <app-image
@@ -241,4 +242,4 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
     </section>
   `,
 })
-export class FirstSection {}
+export class IntroSection {}
