@@ -10,10 +10,10 @@ import { InputTextComponent } from "@/components/InputText.component";
   imports: [ImageComponent, ButtonComponent, InputTextComponent],
   template: `
     <footer
-      class="bg-white py-12 px-4 mt-auto bottom-0 pt-64 max-w-[1400px] mx-auto flex flex-col items-center justify-center"
+      class="bg-white py-12 px-4 mt-auto bottom-0 pt-64 max-w-[1300px] mx-auto flex flex-col items-center justify-center"
     >
       <div
-        class="flex  flex-wrap md:flex-nowrap flex-row  justify-between  w-full gap-8"
+        class="flex  flex-wrap md:flex-nowrap flex-row  justify-between  w-max gap-8"
       >
         <div class="w-full min-w-[17rem] max-w-[21rem] flex flex-col gap-4">
           <h2 class="text-red-500 text-2xl font-bold">Foodhut</h2>
@@ -156,7 +156,7 @@ import { InputTextComponent } from "@/components/InputText.component";
           </div>
         </div>
 
-        <div class="w-[17rem] flex flex-col gap-4 mr-[12rem]">
+        <div class="w-[17rem] flex flex-col gap-4 mr-[12rem] lg:mr-[1rem]">
           <h3 class="text-red-500 text-xl font-semibold">
             Get in touch
           </h3>
