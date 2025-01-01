@@ -5,11 +5,11 @@ import { ImageComponent } from "@/components/Image.component";
 import { Product } from "@/types/product";
 
 @Component({
-  selector: "app-second-section",
+  selector: "special-offers-section",
   standalone: true,
   imports: [CommonModule, ProductCardComponent, ImageComponent],
   template: `
-    <section class="py-12 px-4 max-w-7xl mx-auto min-h-[38rem] flex flex-col justify-center items-center gap-24 relative">
+    <section id="special-offers-section" class="py-12 px-4 max-w-7xl mx-auto min-h-[38rem] flex flex-col justify-center items-center gap-24 relative">
       <app-image
         [src]="'assets/svg/circular-dots-pattern.svg'"
         [alt]="'Circular dots pattern'"
@@ -43,7 +43,7 @@ import { Product } from "@/types/product";
   `,
 })
 
-export class SecondSection {
+export class SpecialOffersSection {
   products: Product[] = [
     {
       id: 1,
