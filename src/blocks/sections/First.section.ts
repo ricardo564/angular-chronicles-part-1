@@ -5,7 +5,7 @@ import { InputTextComponent } from "@/components/InputText.component";
 import { ImageComponent } from "@/components/Image.component";
 import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
 import { CustomerBadgeComponent } from "@/components/CustomerBadge.component";
-import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
+import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
 
 @Component({
   selector: "app-first-section",
@@ -21,7 +21,7 @@ import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
   ],
   template: `
     <section
-      class="mx-auto px-4 py-12 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[38rem] relative"
+      class="mx-auto w-full px-4 py-12 flex flex-col-reverse lg:flex-row items-center justify-between min-h-[38rem] relative"
     >
       <app-image
         [src]="'assets/svg/dashedArrowPath.svg'"
@@ -54,9 +54,7 @@ import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
       <app-image
         [src]="'assets/svg/yellow-overlay.svg'"
         [alt]="'Yellow overlay'"
-        [className]="
-          'lg:w-[36rem] lg:h-[26rem] h-auto absolute -top-[12rem] -right-36 z-[-1]'
-        "
+        [className]="'lg:w-[36rem] lg:h-[26rem] h-auto absolute -top-[12rem] -right-36 z-[-1]'"
       ></app-image>
 
       <div class="w-full lg:w-1/2 my-auto">
@@ -142,7 +140,7 @@ import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
           <app-image
             [src]="'assets/svg/fire.svg'"
             [alt]="'Fire'"
-            [className]="'w-16 h-16 mx-auto top-16'"
+            [className]="'w-10 h-10 lg:w-16 lg:h-16  mx-auto'"
           ></app-image>
         </div>
 
@@ -150,7 +148,7 @@ import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
           [src]="'assets/svg/coriander-leaves.svg'"
           [alt]="'Coriander leaves'"
           [className]="
-            'lg:w-[9rem] w-[8rem] mx-auto absolute -top-8 lg:-top-[3.5rem] right-6 lg:right-[8rem] rotate-16 z-[50]'
+            'lg:w-[9rem] w-16 mx-auto absolute -top-[2rem] lg:-top-[3.5rem] right-10 lg:right-[8rem] rotate-16 z-[50]'
           "
         ></app-image>
 
@@ -158,74 +156,62 @@ import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
           [src]="'assets/svg/leaf-outline.svg'"
           [alt]="'Leaf outline'"
           [className]="
-            'w-[9rem]  mx-auto absolute bottom-[2rem] -right-[10rem] lg:right-0 rotate-16 z-[50]'
+            'w-[9rem]  mx-auto absolute bottom-[2rem] right-0 rotate-16 z-[50]'
           "
         ></app-image>
 
         <div
-          class="top-0 right-0 bg-red-500 rounded-full w-[25rem] lg:w-[30rem] -z-0 relative"
+          class="top-0 right-0 bg-red-500 rounded-full w-[300px] lg:w-[500px] -z-0 relative"
         >
-          <div class="z-10 max-h-[25rem] lg:max-h-[30rem]">
+          <div class="z-10 max-h-[300px] lg:max-h-[500px]">
             <app-image
               [src]="'/assets/images/happy-customer.webp'"
               [alt]="'Happy customer'"
               [className]="
-                'w-full max-w-[25rem] lg:max-w-[30rem] h-auto object-contain max-h-[25rem] lg:max-h-[30rem] rounded-b-full'
+                'w-full h-auto object-contain max-h-[300px] lg:max-h-[500px] rounded-b-full'
               "
             />
           </div>
 
-          <div class="absolute inset-0 top-0 w-[30rem] lg:w-[35rem] -ml-1 lg:-ml-6 -mt-8 lg:-mt-1">
-            <app-image
-              [src]="'assets/svg/semicircle.svg'"
-              [alt]="'Dashed arrow path'"
-              [className]="
-                'w-full h-auto inset-0 top-2 lg:top-16 object-contain max-h-[31rem] absolute -left-[2.5rem] lg:-left-[1rem]'
-              "
-            ></app-image>
+          <app-image
+            [src]="'assets/svg/semicircle.svg'"
+            [alt]="'Dashed arrow path'"
+            [className]="
+              'w-full h-auto inset-0 top-8 lg:top-12 object-contain max-h-[300px] lg:max-h-[500px] absolute'
+            "
+          ></app-image>
 
-            <div class="flex justify-center relative -bottom-[25rem] lg:-bottom-[30rem]">
-              <div
-                class="flex min-w-[35rem] lg:min-w-[40rem] w-full justify-between -bottom-11 lg:-bottom-4 absolute -left-[5rem] lg:-left-[4rem]"
-              >
-                <app-image
-                  [src]="'assets/images/buddha-bowl-sauce.webp'"
-                  [alt]="'Buddha bowl sauce'"
-                  [className]="
-                    'w-[11rem] mx-auto  lg:-left-[5rem] z-[50] bg-cover'
-                  "
-                ></app-image>
+          <app-image
+            [src]="'assets/images/grilled-chicken-plate.webp'"
+            [alt]="'Grilled chicken plate'"
+            [className]="
+              'w-[5rem] lg:w-[10rem] mx-auto absolute bottom-[2rem] -right-9 rotate-16 z-[50]'
+            "
+          ></app-image>
 
-                <app-image
-                  [src]="'assets/images/grilled-chicken-plate.webp'"
-                  [alt]="'Grilled chicken plate'"
-                  [className]="
-                    'w-[8rem] mx-auto  bottom-[2rem] -right-6 rotate-16 z-[50] bg-cover'
-                  "
-                ></app-image>
-              </div>
+          <app-image
+            [src]="'assets/images/salmon-salad-plate.webp'"
+            [alt]="'Salmon salad plate'"
+            [className]="
+              'w-[5rem] lg:w-[10rem] mx-auto absolute -bottom-[3rem] lg:-bottom-[5rem] right-[2rem] lg:right-[5rem] rotate-16 z-[50]'
+            "
+          ></app-image>
 
-              <div
-                class="flex min-w-[15rem]  w-full lg:w-[19rem] justify-center -bottom-[8rem] lg:-bottom-[6rem] absolute -left-[2rem] lg:left-[8rem] gap-8"
-              >
-                <app-image
-                  [src]="'assets/images/grilled-salmon-vegetables.webp'"
-                  [alt]="'Grilled salmon vegetables'"
-                  [className]="
-                    'w-[8rem] lg:w-[10rem] mx-auto  -bottom-[7.5rem] left-[5rem] lg:left-[5rem] rotate-16 z-[50] bg-cover'
-                  "
-                ></app-image>
+          <app-image
+            [src]="'assets/images/grilled-salmon-vegetables.webp'"
+            [alt]="'Grilled salmon vegetables'"
+            [className]="
+              'w-[5rem] lg:w-[10rem] mx-auto absolute -bottom-[4rem] lg:-bottom-[5rem] left-[3.5rem] lg:left-[5rem] rotate-16 z-[50]'
+            "
+          ></app-image>
 
-                <app-image
-                  [src]="'assets/images/salmon-salad-plate.webp'"
-                  [alt]="'Salmon salad plate'"
-                  [className]="
-                    'w-[8rem] lg:w-[11rem] mx-auto -bottom-[5rem] lg:bottom-[10rem] right-[5rem] rotate-16 z-[50] bg-cover'
-                  "
-                ></app-image>
-              </div>
-            </div>
-          </div>
+          <app-image
+            [src]="'assets/images/buddha-bowl-sauce.webp'"
+            [alt]="'Buddha bowl sauce'"
+            [className]="
+              'w-[5rem] lg:w-[10rem] mx-auto absolute bottom-[1rem] -left-[2rem] lg:-left-[5rem] rotate-16 z-[50]'
+            "
+          ></app-image>
         </div>
 
         <app-customer-badge
@@ -235,24 +221,20 @@ import { FoodRatingCardComponent } from "@/components/FoodRatingCard.component";
         <app-image
           [src]="'assets/svg/heart-curved-path.svg'"
           [alt]="'Heart curved path'"
-          [className]="
-            'w-[7rem] h-[20rem]  absolute -top-16 right-0 lg:block hidden'
-          "
+          [className]="'w-[7rem] h-[20rem]  absolute -top-16 right-0 lg:block hidden'"
         ></app-image>
 
         <app-image
           [src]="'assets/svg/dotted-arrow-up.svg'"
           [alt]="'Dotted arrow up'"
-          [className]="
-            'w-[4rem] h-[20rem]  absolute -top-16  right-16 md:-right-[5rem] lg:hidden block'
-          "
+          [className]="'w-[4rem] h-[20rem]  absolute -top-16  right-16 md:-right-[5rem] lg:hidden block'"
         ></app-image>
 
         <app-food-rating-card
           [imageSrc]="'assets/images/pizza.webp'"
           [name]="'Italian Pizza'"
           [rating]="3"
-          [price]="10.5"
+          [price]="10.50"
           [className]="'absolute bottom-0 left-0'"
         ></app-food-rating-card>
       </div>
