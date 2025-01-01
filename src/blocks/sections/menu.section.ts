@@ -5,11 +5,11 @@ import { Product } from "@/types/product";
 import { ButtonComponent } from "@/components/Button.component";
 
 @Component({
-  selector: "app-menu-section",
+  selector: "menu-section",
   standalone: true,
   imports: [CommonModule, ProductCardComponent, ButtonComponent],
   template: `
-    <section class="py-16 px-4 max-w-7xl mx-auto">
+    <section id="menu-section" class="py-16 px-4 max-w-7xl mx-auto min-h-[600px]">
       <!-- Title Section -->
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold">
@@ -138,15 +138,6 @@ export class MenuSection {
     },
     {
       id: 8,
-      name: "Classic Pizza Margherita",
-      image: "/assets/images/pizza.webp",
-      rating: 4.6,
-      description: "Traditional Italian pizza with fresh mozzarella, basil, and San Marzano tomato sauce",
-      price: 18.99,
-      category: "italian"
-    },
-    {
-      id: 9,
       name: "Salmon Salad",
       image: "/assets/images/salmon-salad-plate.webp",
       rating: 4.8,
@@ -155,7 +146,7 @@ export class MenuSection {
       category: "lunch"
     },
     {
-      id: 10,
+      id: 9,
       name: "Shrimp Scampi",
       image: "/assets/images/shrimp-scampi.webp",
       rating: 4.7,
