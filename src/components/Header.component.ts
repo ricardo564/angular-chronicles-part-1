@@ -22,7 +22,8 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
             {{ item.label }}
           </a>
         </nav>
-        <app-download-shortcut></app-download-shortcut>
+
+        <download-shortcut></download-shortcut>
       </div>
     </header>
   `,
