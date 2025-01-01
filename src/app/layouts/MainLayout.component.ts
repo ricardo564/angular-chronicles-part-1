@@ -12,7 +12,7 @@ import { FooterComponent } from '@/blocks/sections/footer.section';
     FooterComponent,
   ],
   template: `
-    <div class="min-h-screen flex flex-col">
+    <div class="min-h-screen flex flex-col overflow-x-hidden">
       <app-header></app-header>
 
       <main class="flex flex-col w-full mx-auto max-w-[1400px]">
