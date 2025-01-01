@@ -137,15 +137,6 @@ export class MenuSection {
     },
     {
       id: 8,
-      name: "Salmon Salad",
-      image: "/assets/images/salmon-salad-plate.webp",
-      rating: 4.8,
-      description: "Grilled salmon fillet on a bed of mixed greens with avocado and citrus vinaigrette",
-      price: 19.99,
-      category: "lunch"
-    },
-    {
-      id: 9,
       name: "Shrimp Scampi",
       image: "/assets/images/shrimp-scampi.webp",
       rating: 4.7,
