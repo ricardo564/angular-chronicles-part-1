@@ -155,7 +155,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
           </div>
         </div>
 
-        <div class="w-[17rem] flex flex-col gap-4">
+        <div class="w-[17rem] flex flex-col gap-4 mr-[12rem]">
           <h3 class="text-red-500 text-xl font-semibold">
             Get in touch
           </h3>
@@ -164,11 +164,11 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
             eiusmod tempor
           </p>
 
-          <div class="flex lg:flex-row flex-col gap-2">
+          <div class="flex flex-row gap-2">
             <input
               type="email"
               placeholder="Email"
-              class="flex-1 px-4 py-2 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-red-500"
+              class="min-w-[12rem] w-full px-4 py-2 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-red-500"
             />
             <app-button
               [className]="
