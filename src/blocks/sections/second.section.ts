@@ -32,7 +32,7 @@ import { ImageComponent } from "@/components/Image.component";
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-14">
         <app-product-card
           *ngFor="let product of products"
           [product]="product"
