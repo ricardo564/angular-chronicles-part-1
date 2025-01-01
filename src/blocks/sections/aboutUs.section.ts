@@ -6,7 +6,7 @@ import { ServiceItem } from "@/types/ServiceItem";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
 
 @Component({
-  selector: "app-third-section",
+  selector: "about-us-section",
   standalone: true,
   imports: [
     CommonModule,
@@ -16,6 +16,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
   ],
   template: `
     <section
+      id="about-us-section"
       class="relative min-h-[38rem] flex items-center py-16 mx-auto flex-co justify-between"
     >
       <app-image
@@ -132,7 +133,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
   `,
 })
 
-export class ThirdSection {
+export class AboutUsSection {
   services: ServiceItem[] = [
     {
       path: "/assets/svg/shopping-cart.svg",
