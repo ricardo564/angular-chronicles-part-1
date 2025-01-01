@@ -1,0 +1,26 @@
+<svg width="46" height="213" viewBox="0 0 46 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.8717 0.860478C34.4872 0.398137 35.3724 0.775468 35.4651 1.53967L36.5474 10.4671C36.64 11.2313 35.8707 11.8092 35.1625 11.5073L26.89 7.98098C26.1819 7.67911 26.066 6.72386 26.6815 6.26152L33.8717 0.860478Z" fill="#F54748">
+  <animate
+    attributeName="opacity"
+    values="1;0.5;1"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+</path>
+<path d="M1 212C15.4101 204.974 48.654 179.722 30.3259 164.762C14.1461 151.556 -8.85955 198.54 30.3259 199.302C69.5113 200.063 10.5 62.5 30.3259 11" stroke="#FDC55E" stroke-width="2" stroke-linejoin="round" stroke-dasharray="8 8">
+  <animate
+    attributeName="stroke-dashoffset"
+    values="0;-16"
+    dur="1s"
+    repeatCount="indefinite"
+  />
+</path>
+
+<circle r="4" fill="#F54748">
+  <animateMotion
+    dur="20s"
+    repeatCount="indefinite"
+    path="M1 212C15.4101 204.974 48.654 179.722 30.3259 164.762C14.1461 151.556 -8.85955 198.54 30.3259 199.302C69.5113 200.063 10.5 62.5 30.3259 11"
+  />
+</circle>
+</svg>
