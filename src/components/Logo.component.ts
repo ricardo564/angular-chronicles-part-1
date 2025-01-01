@@ -11,7 +11,7 @@ import { RouterLink } from "@angular/router";
       <app-image
         [src]="'assets/logo.svg'"
         [alt]="'Food Hut'"
-        [className]="'w-24'"
+        [className]="'w-[7rem]'"
       ></app-image>
       <span class="text-2xl font-bold ml-2 sr-only">Food Hut</span>
     </a>
