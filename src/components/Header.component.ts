@@ -9,7 +9,7 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
   imports: [NgFor, LogoComponent, DownloadShortcutBlock],
   template: `
     <header
-      class="md:max-w-[900px] lg:max-w-[1400px] mx-auto flex justify-between items-center  px-4 py-4"
+      class="md:max-w-[900px] lg:max-w-[1400px] mx-auto flex justify-between items-center  px-4 py-4 fixed top-0 left-0 right-0 z-50"
     >
       <app-logo></app-logo>
       <nav class="hidden lg:flex space-x-8">
