@@ -7,7 +7,7 @@ import { RouterLink } from "@angular/router";
   standalone: true,
   imports: [ImageComponent, RouterLink],
   template: `
-    <a class="flex items-center" [routerLink]="['/']" rel="home">
+    <a class="flex items-center" [href]="'#intro-section'" rel="home">
       <app-image
         [src]="'assets/logo.svg'"
         [alt]="'Food Hut'"
