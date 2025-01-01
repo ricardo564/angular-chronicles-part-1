@@ -18,7 +18,7 @@ import { ImageComponent } from "@/components/Image.component";
       <app-image
         [src]="'assets/svg/pine-branch.svg'"
         [alt]="'Pine branch'"
-        [className]="'w-[160px] h-auto absolute -bottom-16 -right-[12rem]'"
+        [className]="'w-[160px] h-auto absolute -bottom-16 -right-[3rem] md:-right-[12rem]'"
       ></app-image>
 
       <div class="text-center mb-10">
