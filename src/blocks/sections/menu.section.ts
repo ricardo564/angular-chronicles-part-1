@@ -30,7 +30,7 @@ import { ButtonComponent } from "@/components/Button.component";
               ? 'bg-red-500 text-white'
               : 'bg-gray-100 hover:bg-gray-200')
           "
-          (click)="selectCategory(category.id ?? 'dinner')"
+          (click)="selectCategory(category.id)"
         >
           {{ category.name }}
         </app-button>
