@@ -92,6 +92,14 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
                 'lg:w-[9rem] w-[8rem] mx-auto absolute left-[10rem] top-[25rem] z-[50] rotate-60'
               "
             ></app-image>
+
+            <app-image
+              [src]="'assets/svg/helix-curve.svg'"
+              [alt]="'Helix curve'"
+              [className]="
+                'w-[6rem] mx-auto absolute left-[30rem] top-[13rem] z-[50] rotate-60'
+              "
+            ></app-image>
           </div>
 
           <div class="w-full md:w-1/2 max-w-[43rem] text-black pt-32">
