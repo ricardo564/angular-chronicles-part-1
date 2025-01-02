@@ -10,11 +10,10 @@
           "/favicon.ico",
           "/index.csr.html",
           "/index.html",
-          "/manifest.webmanifest",
+          "/manifest.json",
           "/*.css",
           "/*.js",
           "/*.webp",
-          "/*.webmanifest",
           "/*.svg"
         ]
       }
