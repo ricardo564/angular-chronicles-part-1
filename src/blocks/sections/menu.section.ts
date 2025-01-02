@@ -36,9 +36,7 @@ import { ButtonComponent } from "@/components/Button.component";
         </app-button>
       </div>
 
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-14"
-      >
+      <div class="flex flex-wrap gap-6 gap-y-14 items-center justify-center">
         <ng-container *ngIf="filteredProducts.length > 0; else noProducts">
           <app-product-card
             *ngFor="let product of filteredProducts"

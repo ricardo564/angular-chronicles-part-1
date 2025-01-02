@@ -33,7 +33,7 @@ import { Product } from "@/types/product";
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-14">
+      <div class="flex flex-wrap gap-6 gap-y-14 items-center justify-center">
         <app-product-card
           *ngFor="let product of products"
           [product]="product"
