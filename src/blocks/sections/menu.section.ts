@@ -82,17 +82,17 @@ export class MenuSection {
         {
           id: "1",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Ava Thompson",
         },
         {
           id: "2",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Ethan Patel",
         },
         {
           id: "3",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Lily Chen",
         },
       ],
     },
@@ -106,19 +106,19 @@ export class MenuSection {
       category: "lunch",
       users: [
         {
-          id: "1",
+          id: "4",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Oliver Brown",
         },
         {
-          id: "2",
+          id: "5",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Sophia Lee",
         },
         {
-          id: "3",
+          id: "6",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Mason Davis",
         },
       ],
     },
@@ -132,19 +132,19 @@ export class MenuSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "7",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Isabella Garcia",
         },
         {
-          id: "2",
+          id: "8",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Alexander Martin",
         },
         {
-          id: "3",
+          id: "9",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Charlotte Hall",
         },
       ],
     },
@@ -158,19 +158,19 @@ export class MenuSection {
       category: "lunch",
       users: [
         {
-          id: "1",
+          id: "10",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Julian Sanchez",
         },
         {
-          id: "2",
+          id: "11",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Emily Taylor",
         },
         {
-          id: "3",
+          id: "12",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Benjamin White",
         },
       ],
     },
@@ -184,19 +184,19 @@ export class MenuSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "13",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Hannah Brooks",
         },
         {
-          id: "2",
+          id: "14",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Caleb Walker",
         },
         {
-          id: "3",
+          id: "15",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Abigail Lewis",
         },
       ],
     },
@@ -210,19 +210,19 @@ export class MenuSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "16",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Gabriel Harris",
         },
         {
-          id: "2",
+          id: "17",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Samantha Johnson",
         },
         {
-          id: "3",
+          id: "18",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Michael Brown",
         },
       ],
     },
@@ -236,19 +236,19 @@ export class MenuSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "19",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Olivia Williams",
         },
         {
-          id: "2",
+          id: "20",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Logan Davis",
         },
         {
-          id: "3",
+          id: "21",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Ava Rodriguez",
         },
       ],
     },
@@ -262,19 +262,19 @@ export class MenuSection {
       category: "italian",
       users: [
         {
-          id: "1",
+          id: "22",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Ethan Hall",
         },
         {
-          id: "2",
+          id: "23",
           imagePath: "default-avatar.webp",
-          name: "Jane Doe",
+          name: "Lily Martin",
         },
         {
-          id: "3",
+          id: "24",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Ava Patel",
         },
       ],
     }

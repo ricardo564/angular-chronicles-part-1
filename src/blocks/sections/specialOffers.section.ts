@@ -58,7 +58,17 @@ export class SpecialOffersSection {
         {
           id: "1",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Ethan Thompson",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Lily Patel",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "Oliver Lee",
         },
       ],
     },
@@ -73,9 +83,19 @@ export class SpecialOffersSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "4",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Ava Martin",
+        },
+        {
+          id: "5",
+          imagePath: "default-avatar.webp",
+          name: "Noah Brown",
+        },
+        {
+          id: "6",
+          imagePath: "default-avatar.webp",
+          name: "Sophia Davis",
         },
       ],
     },
@@ -90,9 +110,19 @@ export class SpecialOffersSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "7",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Mia Taylor",
+        },
+        {
+          id: "8",
+          imagePath: "default-avatar.webp",
+          name: "Isabella Johnson",
+        },
+        {
+          id: "9",
+          imagePath: "default-avatar.webp",
+          name: "Alexander Smith",
         },
       ],
     },
@@ -107,9 +137,19 @@ export class SpecialOffersSection {
       category: "dinner",
       users: [
         {
-          id: "1",
+          id: "10",
           imagePath: "default-avatar.webp",
-          name: "John Doe",
+          name: "Charlotte Williams",
+        },
+        {
+          id: "11",
+          imagePath: "default-avatar.webp",
+          name: "Benjamin Jones",
+        },
+        {
+          id: "12",
+          imagePath: "default-avatar.webp",
+          name: "Abigail Brown",
         },
       ],
     },
