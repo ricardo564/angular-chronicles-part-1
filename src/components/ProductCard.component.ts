@@ -11,7 +11,7 @@ import { UserPreview } from "@/components/UserPreview.component";
   imports: [CommonModule, ImageComponent, UserPreview],
   template: `
     <div
-      class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow w-[19rem] h-[33rem] relative bg-gradient-to-b from-white via-white  to-red-500/30"
+      class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow w-[19rem] h-[33rem] relative bg-gradient-to-b from-white via-white  to-red-500/30 {{ className }}"
     >
       <div class="relative mb-3">
         <app-image
@@ -79,6 +79,7 @@ import { UserPreview } from "@/components/UserPreview.component";
 })
 export class ProductCardComponent {
   @Input() product!: Product;
+  @Input() className: string = '';
 
   getRandomLinkForRedirection() {
     return getRandomLinkForRedirection();
