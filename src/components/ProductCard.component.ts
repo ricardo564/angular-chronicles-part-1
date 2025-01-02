@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ImageComponent } from "@/components/Image.component";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
-import type { Product } from "@/types/product";
+import type { Product } from "@/types/product.types";
 import { UserPreview } from "@/components/UserPreview.component";
 
 @Component({
