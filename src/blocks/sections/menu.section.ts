@@ -51,7 +51,7 @@ import { ButtonComponent } from "@/components/Button.component";
       </div>
 
       <div
-        class="flex md:hidden flex-wrap gap-6 gap-y-14 items-center justify-center"
+        class="flex md:hidden flex-wrap gap-6 gap-y-14 items-center justify-center overflow-hidden min-h-[35rem]"
       >
         <ng-container *ngIf="filteredProducts.length > 0; else noProducts">
           <app-product-card [product]="filteredProducts[0]"></app-product-card>
