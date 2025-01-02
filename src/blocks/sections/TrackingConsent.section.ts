@@ -1,7 +1,19 @@
+declare global {
+  namespace NodeJS {
+    interface ProcessEnv {
+      PUBLIC_GOOGLE_TAG_MANAGER_ID: string;
+    }
+  }
+}
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 import { Component, OnInit } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import Clarity from "@microsoft/clarity";
-import { clarityId } from "@/configs/env";
 import {
   saveItemOnLocalStorage,
 } from "@/utils/localStorageHandler";
@@ -86,8 +98,14 @@ export class TrackingConsentComponent implements OnInit {
   }
 
   private initializeClarity(): void {
-    if (clarityId) {
-      Clarity.init(clarityId);
+    const gtmId = process.env.PUBLIC_GOOGLE_TAG_MANAGER_ID;
+
+    if (gtmId) {
+      window.dataLayer.push({
+        event: "gtm.js",
+        "gtm.start": new Date().getTime(),
+        "gtm.containerId": gtmId,
+      });
     }
   }
 }
