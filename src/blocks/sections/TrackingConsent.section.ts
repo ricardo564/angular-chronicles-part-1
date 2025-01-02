@@ -4,7 +4,6 @@ import Clarity from "@microsoft/clarity";
 import { clarityId } from "@/configs/env";
 import {
   saveItemOnLocalStorage,
-  removeItemFromLocalStorage,
 } from "@/utils/localStorageHandler";
 
 @Component({
@@ -14,26 +13,24 @@ import {
   template: `
     <div
       *ngIf="showModal"
-      class="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+      class="fixed bottom-6 right-0 flex items-center justify-center z-50"
     >
       <div
         class="bg-white rounded-lg p-6 max-w-md w-full mx-4 shadow-xl"
         role="dialog"
         aria-modal="true"
       >
-        <h2 class="text-xl font-semibold mb-4">
-          🔒 Consentimento de Rastreamento
-        </h2>
+        <h2 class="text-xl font-semibold mb-4">🔒 Tracking Consent</h2>
 
         <p class="mb-4 text-gray-600">
-          Gostaríamos de usar ferramentas de análise para melhorar sua
-          experiência. Para saber mais, consulte nossa
+          We would like to use analytics tools to improve your experience. To
+          learn more, please see our
           <a
-            href="/politicas-de-privacidade"
+            href="/privacy-policy"
             class="text-blue-600 hover:text-blue-800 underline"
             target="_blank"
           >
-            Política de Privacidade </a
+            Privacy Policy </a
           >.
         </p>
 
@@ -41,16 +38,16 @@ import {
           <button
             (click)="handleConsent(false)"
             class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"
-            aria-label="Recusar rastreamento"
+            aria-label="Decline tracking"
           >
-            Recusar
+            Decline
           </button>
           <button
             (click)="handleConsent(true)"
             class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-            aria-label="Aceitar rastreamento"
+            aria-label="Accept tracking"
           >
-            Aceitar
+            Accept
           </button>
         </div>
       </div>
@@ -59,33 +56,35 @@ import {
 })
 export class TrackingConsentComponent implements OnInit {
   private readonly CONSENT_KEY = "tracking-consent";
+  private readonly HAS_CHOSEN_KEY = "has-chosen-tracking";
   showModal = false;
 
   ngOnInit(): void {
+    const hasChosen = localStorage.getItem(this.HAS_CHOSEN_KEY);
     const savedConsent = localStorage.getItem(this.CONSENT_KEY);
-    if (savedConsent === null) {
+
+    if (hasChosen !== "true") {
       this.showModal = true;
-    } else if (savedConsent === "true") {
+      saveItemOnLocalStorage(this.CONSENT_KEY, "true");
+      this.initializeClarity();
+      return;
+    }
+
+    if (savedConsent === "true") {
       this.initializeClarity();
     }
   }
 
-  /**
-   * Handles the user's consent choice for tracking
-   * @param consent - Boolean indicating if user accepted tracking
-   */
   handleConsent(consent: boolean): void {
     this.showModal = false;
-    saveItemOnLocalStorage(this.CONSENT_KEY, consent.toString());
 
-    if (consent) {
-      this.initializeClarity();
+    saveItemOnLocalStorage(this.HAS_CHOSEN_KEY, "true");
+
+    if (!consent) {
+      saveItemOnLocalStorage(this.CONSENT_KEY, "false");
     }
   }
 
-  /**
-   * Initializes Microsoft Clarity tracking
-   */
   private initializeClarity(): void {
     if (clarityId) {
       Clarity.init(clarityId);
