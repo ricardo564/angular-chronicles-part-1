@@ -28,19 +28,19 @@ import { ImageComponent } from "@/components/Image.component";
               food delivery
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 min-h-10 relative min-w-[17rem]">
+            <div class="flex  w-full justify-center gap-4 min-h-10 relative min-w-[17rem] max-w-[20rem]">
               <a href="#" class="transition-transform hover:scale-105 h-14 w-full ">
                 <app-image
                   [src]="'assets/svg/google-play-badge.svg'"
                   [alt]="'Get it on Google Play'"
-                  [className]="'h-full  w-full object-cover'"
+                  [className]="'h-full  w-full object-contain'"
                 />
               </a>
               <a href="#" class="transition-transform hover:scale-105 h-14 w-full">
                 <app-image
                   [src]="'assets/svg/app-store-badge.svg'"
                   [alt]="'Download on App Store'"
-                  [className]="'h-full  w-full object-cover'"
+                  [className]="'h-full  w-full object-contain'"
                 />
               </a>
             </div>
