@@ -11,11 +11,11 @@ import { ImageComponent } from "@/components/Image.component";
       id="app-section"
       class="relative bg-gradient-to-b from-white via-white to-[#FFF9F3] p-20 min-h-[600px] w-screen"
     >
-      <div class="container mx-auto mx-auto md:max-w-[900px] lg:max-w-[1400px]">
+      <div class="container mx-auto md:max-w-[900px] lg:max-w-[1400px]">
         <div
           class="flex flex-col lg:flex-row items-center justify-between gap-12"
         >
-          <div class="w-full lg:w-1/2 z-10">
+          <div class="w-full lg:w-1/2 z-10 md:ml-16">
             <h2 class="text-4xl font-bold leading-tight mb-6">
               It's Now <span class="text-red-500">More Easy</span> to
               <span class="text-amber-400">Order</span><br />
