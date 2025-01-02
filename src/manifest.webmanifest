@@ -13,50 +13,220 @@
     {
       "src": "assets/icons/icon-72x72.webp",
       "sizes": "72x72",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-96x96.webp",
       "sizes": "96x96",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-128x128.webp",
       "sizes": "128x128",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-144x144.webp",
       "sizes": "144x144",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "assets/icons/icon-152x152.webp",
       "sizes": "152x152",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-192x192.webp",
       "sizes": "192x192",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-384x384.webp",
       "sizes": "384x384",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "assets/icons/icon-512x512.webp",
       "sizes": "512x512",
-      "type": "image/webp",
-      "purpose": "maskable any"
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/splash-screens/4_iPhone_SE_iPod_touch_5th_generation_and_later_landscape.png",
+      "sizes": "1334x750",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/4_iPhone_SE_iPod_touch_5th_generation_and_later_portrait.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_8_iPhone_7_iPhone_6s_iPhone_6_4.7_iPhone_SE_landscape.png",
+      "sizes": "1334x750",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_8_iPhone_7_iPhone_6s_iPhone_6_4.7_iPhone_SE_portrait.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_8_Plus_iPhone_7_Plus_iPhone_6s_Plus_iPhone_6_Plus_landscape.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_8_Plus_iPhone_7_Plus_iPhone_6s_Plus_iPhone_6_Plus_portrait.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_11_iPhone_XR_landscape.png",
+      "sizes": "1792x828",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_11_iPhone_XR_portrait.png",
+      "sizes": "828x1792",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_11_Pro_Max_iPhone_XS_Max_landscape.png",
+      "sizes": "2688x1242",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_11_Pro_Max_iPhone_XS_Max_portrait.png",
+      "sizes": "1242x2688",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_13_mini_iPhone_12_mini_iPhone_11_Pro_iPhone_XS_iPhone_X_landscape.png",
+      "sizes": "2340x1080",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_13_mini_iPhone_12_mini_iPhone_11_Pro_iPhone_XS_iPhone_X_portrait.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_14_iPhone_13_Pro_iPhone_13_iPhone_12_Pro_iPhone_12_landscape.png",
+      "sizes": "2536x1170",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_14_iPhone_13_Pro_iPhone_13_iPhone_12_Pro_iPhone_12_portrait.png",
+      "sizes": "1170x2536",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_14_Plus_iPhone_13_Pro_Max_iPhone_12_Pro_Max_landscape.png",
+      "sizes": "2778x1284",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_14_Plus_iPhone_13_Pro_Max_iPhone_12_Pro_Max_portrait.png",
+      "sizes": "1284x2778",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_iPhone_15_Pro_iPhone_15_iPhone_14_Pro_landscape.png",
+      "sizes": "2536x1170",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_iPhone_15_Pro_iPhone_15_iPhone_14_Pro_portrait.png",
+      "sizes": "1170x2536",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_Plus_iPhone_15_Pro_Max_iPhone_15_Plus_iPhone_14_Pro_Max_landscape.png",
+      "sizes": "2778x1284",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_Plus_iPhone_15_Pro_Max_iPhone_15_Plus_iPhone_14_Pro_Max_portrait.png",
+      "sizes": "1284x2778",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_Pro_landscape.png",
+      "sizes": "2536x1170",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_Pro_Max_landscape.png",
+      "sizes": "2778x1284",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_Pro_Max_portrait.png",
+      "sizes": "1284x2778",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHut Mobile Experience"
+    },
+    {
+      "src": "assets/splash-screens/iPhone_16_Pro_portrait.png",
+      "sizes": "1170x2536",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FoodHut Mobile Experience"
     }
   ]
 }
