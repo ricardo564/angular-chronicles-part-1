@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ImageComponent } from "@/components/Image.component";
 import { ServiceGridComponent } from "@/components/ServiceGrid.component";
-import { ServiceItem } from "@/types/ServiceItem";
+import { ServiceItem } from "@/types/ServiceItem.types";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
 
 @Component({
