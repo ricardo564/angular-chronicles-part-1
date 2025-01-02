@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ProductCardComponent } from "@/components/ProductCard.component";
-import { Product } from "@/types/product";
+import { Product } from "@/types/product.types";
 import { ButtonComponent } from "@/components/Button.component";
 
 @Component({
