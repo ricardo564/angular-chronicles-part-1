@@ -2,6 +2,8 @@ import { NgFor } from "@angular/common";
 import { Component } from "@angular/core";
 import { LogoComponent } from "@/components/Logo.component";
 import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcut.block";
+import { HEADER_NAVIGATION_ITEMS } from "@/constants/navigation.constants";
+import type { NavigationItem } from "@/types/navigation.types";
 
 @Component({
   selector: "app-header",
@@ -29,10 +31,5 @@ import { DownloadShortcutBlock } from "@/blocks/downloadShortcut/DownloadShortcu
   `,
 })
 export class HeaderComponent {
-  menuItems = [
-    { label: "Today Special Offers", link: "#special-offers-section" },
-    { label: "Why FoodHut", link: "#about-us-section" },
-    { label: "Our Menu", link: "#menu-section" },
-    { label: "Our Popular Food", link: "#menu-section" },
-  ];
+  menuItems: NavigationItem[]   = HEADER_NAVIGATION_ITEMS;
 }
