@@ -33,11 +33,19 @@ import { Product } from "@/types/product.types";
         </p>
       </div>
 
-      <div class="flex flex-wrap lg:flex-nowrap gap-6 gap-y-14 items-center justify-center">
+      <div class="hidden md:flex flex-wrap lg:flex-nowrap gap-6 gap-y-14 items-center justify-center">
         <app-product-card
           *ngFor="let product of products"
           [product]="product"
         ></app-product-card>
+      </div>
+
+      <div class="flex md:hidden flex-nowrap gap-6 gap-y-14 items-center justify-center overflow-x-scroll min-h-[35rem]">
+        <div class="flex flex-nowrap gap-6 gap-y-14 items-center justify-center">
+          <app-product-card
+            [product]="products[0]"
+          ></app-product-card>
+        </div>
       </div>
     </section>
   `,
