@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { ServiceItem } from "@/types/ServiceItem";
+import { ServiceItem } from "@/types/ServiceItem.types";
 import { ImageComponent } from "@/components/Image.component";
 
 @Component({
