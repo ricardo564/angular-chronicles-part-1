@@ -10,12 +10,12 @@ import { InputTextComponent } from "@/components/InputText.component";
   imports: [ImageComponent, ButtonComponent, InputTextComponent],
   template: `
     <footer
-      class="bg-white py-12 px-4 mt-auto bottom-0 max-w-[1300px] mx-auto flex flex-col items-center justify-center"
+      class="bg-white py-12 px-4 mt-auto bottom-0 w-full max-w-[1300px] mx-auto flex flex-col items-center justify-center pt-[15rem] md:pt-[5rem]"
     >
       <div
-        class="flex  flex-wrap md:flex-nowrap flex-row  justify-between  w-max gap-8"
+        class="flex flex-col md:flex-row w-full justify-between gap-8"
       >
-        <div class="w-full min-w-[17rem] max-w-[21rem] flex flex-col gap-4">
+        <div class="w-full md:max-w-[21rem] flex flex-col gap-4">
           <h2 class="text-red-500 text-2xl font-bold">Foodhut</h2>
           <p class="text-gray-600 max-w-xs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -63,7 +63,7 @@ import { InputTextComponent } from "@/components/InputText.component";
         </div>
 
         <div
-          class="flex flex-wrap md:flex-nowrap flex-row justify-between max-w-[20rem]"
+          class="flex flex-col sm:flex-row md:flex-nowrap justify-between w-full md:max-w-[20rem] gap-8 md:gap-4"
         >
           <div class="min-w-[10rem]">
             <h3 class="text-red-500 text-xl font-semibold">About Us</h3>
@@ -156,16 +156,18 @@ import { InputTextComponent } from "@/components/InputText.component";
           </div>
         </div>
 
-        <div class="w-[17rem] flex flex-col gap-4 mr-[12rem] lg:mr-[1rem]">
-          <h3 class="text-red-500 text-xl font-semibold">
-            Get in touch
-          </h3>
-          <p class="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor
-          </p>
+        <div class="w-full md:max-w-[20rem] flex flex-col gap-4">
+          <div class="flex flex-col gap-4 mr-auto">
+            <h3 class="text-red-500 text-xl font-semibold">
+              Get in touch
+            </h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
 
-          <div class="flex flex-row gap-5 items-center justify-center">
+          <div class="flex flex-col sm:flex-row gap-5 items-center justify-center">
             <app-input-text
               [inputClassName]="'min-w-[12rem] w-full px-4 py-2 rounded-full bg-gray-200'"
               type="email"
@@ -175,7 +177,7 @@ import { InputTextComponent } from "@/components/InputText.component";
 
             <app-button
               [className]="
-                'p-16  bg-red-500 text-white hover:bg-[#ff4542] transition-colors rounded-full'
+                'w-full sm:w-auto px-6 py-2 bg-red-500 text-white hover:bg-[#ff4542] transition-colors rounded-full'
               "
             >
               Subscribe
