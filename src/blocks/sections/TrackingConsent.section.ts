@@ -98,7 +98,7 @@ export class TrackingConsentComponent implements OnInit {
   }
 
   private initializeClarity(): void {
-    const gtmId = process.env.PUBLIC_GOOGLE_TAG_MANAGER_ID;
+    const gtmId = "google-key-from-env";
 
     if (gtmId) {
       window.dataLayer.push({
