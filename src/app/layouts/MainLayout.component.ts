@@ -11,7 +11,6 @@ import { TrackingConsentComponent } from "@/blocks/sections/TrackingConsent.sect
   imports: [RouterOutlet, HeaderComponent, FooterComponent, ImageComponent, TrackingConsentComponent],
   template: `
     <div class="min-h-screen flex flex-col overflow-x-hidden">
-      <tracking-consent></tracking-consent>
       <app-header></app-header>
 
       <app-image
