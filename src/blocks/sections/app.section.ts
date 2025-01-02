@@ -33,7 +33,7 @@ import { ImageComponent } from "@/components/Image.component";
                 <app-image
                   [src]="'assets/svg/google-play-badge.svg'"
                   [alt]="'Get it on Google Play'"
-                  [className]="'h-full  w-full object-contain'"
+                  [className]="'h-full  w-full object-contain scale-[1.12]'"
                 />
               </a>
               <a href="#" class="transition-transform hover:scale-105 h-14 w-full">
