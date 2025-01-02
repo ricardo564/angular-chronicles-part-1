@@ -54,6 +54,13 @@ export class SpecialOffersSection {
         "A delicious dish made from meat, often served with vegetables and rice.",
       price: 15.99,
       category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 2,
@@ -64,6 +71,13 @@ export class SpecialOffersSection {
         "A popular Indian dish made from chunks of chicken marinated in spices and yogurt.",
       price: 12.99,
       category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 3,
@@ -74,6 +88,13 @@ export class SpecialOffersSection {
         "A Chinese stir-fried noodle dish that is popular in India.",
       price: 10.99,
       category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 4,
@@ -84,6 +105,13 @@ export class SpecialOffersSection {
         "A Middle Eastern dish made from meat, often served with pita bread.",
       price: 13.99,
       category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
   ];
 }
