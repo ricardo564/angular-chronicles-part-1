@@ -77,7 +77,24 @@ export class MenuSection {
       rating: 4.8,
       description: "Fluffy French toast topped with fresh berries, sliced bananas, and maple syrup drizzle",
       price: 12.99,
-      category: "breakfast"
+      category: "breakfast",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 2,
@@ -86,7 +103,24 @@ export class MenuSection {
       rating: 4.7,
       description: "Nutritious bowl with quinoa, roasted vegetables, avocado, and signature tahini sauce",
       price: 14.99,
-      category: "lunch"
+      category: "lunch",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 3,
@@ -95,7 +129,24 @@ export class MenuSection {
       rating: 4.6,
       description: "Premium beef patty with melted cheddar, crispy bacon, fresh vegetables, and special sauce",
       price: 16.99,
-      category: "dinner"
+      category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 4,
@@ -104,7 +155,24 @@ export class MenuSection {
       rating: 4.5,
       description: "Crunchy breaded chicken fillet with lettuce, tomato, and honey mustard sauce",
       price: 15.99,
-      category: "lunch"
+      category: "lunch",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 5,
@@ -113,7 +181,24 @@ export class MenuSection {
       rating: 4.4,
       description: "Herb-marinated grilled chicken breast served with seasonal vegetables and rice",
       price: 17.99,
-      category: "dinner"
+      category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 6,
@@ -122,7 +207,24 @@ export class MenuSection {
       rating: 4.9,
       description: "Fresh Atlantic salmon fillet with grilled asparagus and roasted vegetables",
       price: 24.99,
-      category: "dinner"
+      category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 7,
@@ -131,7 +233,24 @@ export class MenuSection {
       rating: 4.7,
       description: "Assortment of grilled meats including chicken, beef, and lamb with grilled vegetables",
       price: 28.99,
-      category: "dinner"
+      category: "dinner",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     },
     {
       id: 8,
@@ -140,7 +259,24 @@ export class MenuSection {
       rating: 4.7,
       description: "Succulent shrimp sautéed in garlic butter white wine sauce over linguine pasta",
       price: 22.99,
-      category: "italian"
+      category: "italian",
+      users: [
+        {
+          id: "1",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+        {
+          id: "2",
+          imagePath: "default-avatar.webp",
+          name: "Jane Doe",
+        },
+        {
+          id: "3",
+          imagePath: "default-avatar.webp",
+          name: "John Doe",
+        },
+      ],
     }
   ];
 
