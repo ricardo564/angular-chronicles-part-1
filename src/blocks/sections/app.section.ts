@@ -102,7 +102,7 @@ import { ImageComponent } from "@/components/Image.component";
               [src]="'assets/svg/wave-lines-abstract.svg'"
               [alt]="'Wave lines abstract'"
               [className]="
-                'absolute -bottom-[20rem] -right-[25rem] w-full scale-150  z-[3]'
+                'hidden md:block absolute -bottom-[20rem] -right-[25rem] w-full scale-150  z-[3]'
               "
             />
           </div>
