@@ -17,7 +17,7 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
   template: `
     <section
       id="about-us-section"
-      class="relative min-h-[38rem] flex items-center py-16 mx-auto flex-co justify-between mx-auto md:max-w-[900px] lg:max-w-[1400px]"
+      class="relative min-h-[38rem] flex items-center py-16 mx-auto flex-co justify-between md:max-w-[900px] lg:max-w-[1400px]"
     >
       <app-image
         [src]="'assets/svg/circular-dots-pattern.svg'"
@@ -43,8 +43,8 @@ import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection
         <div
           class="flex flex-col lg:flex-row justify-between items-center gap-12"
         >
-          <div class="rounded-lg p-4 mx-auto">
-            <div class="relative w-full md:w-1/2 h-[17rem]">
+          <div class="rounded-lg p-4 md:mx-auto">
+            <div class="relative w-screen md:w-1/2 h-[17rem] ">
               <div
                 class="top-0 right-0 bg-red-500 rounded-full w-[25rem] h-[25rem] -z-0 relative"
                 style="background-image: url('/assets/images/circular-food-grid.webp'); background-size: cover; background-position: center;"
