@@ -35,7 +35,7 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
       <app-image
         [src]="'assets/svg/curved-lines.svg'"
         [alt]="'Curved lines'"
-        [className]="'w-[23rem]  absolute top-0 right-0'"
+        [className]="'w-[23rem]  absolute top-0 right-0 z-[-2]'"
       ></app-image>
 
       <app-image
