@@ -3,11 +3,12 @@ import { CommonModule } from "@angular/common";
 import { ImageComponent } from "@/components/Image.component";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
 import type { Product } from "@/types/product";
+import { UserPreview } from "@/components/UserPreview.component";
 
 @Component({
   selector: "app-product-card",
   standalone: true,
-  imports: [CommonModule, ImageComponent],
+  imports: [CommonModule, ImageComponent, UserPreview],
   template: `
     <div
       class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow w-[19rem] h-[33rem] relative bg-gradient-to-b from-white via-white  to-red-500/30"
@@ -32,17 +33,28 @@ import type { Product } from "@/types/product";
         </p>
       </div>
 
-      <div class="w-full flex justify-center">
-        <span
-          class="flex items-center gap-1 bg-white px-2 py-1 rounded-full text-sm"
+      <div class="flex w-full items-center justify-center">
+        <div
+          class="flex items-center justify-center gap-1 px-2 py-1 rounded-full text-sm mx-auto w-full max-w-[17rem]"
         >
-          <app-image
-            [src]="'assets/svg/star.svg'"
-            [alt]="'rating'"
-            [className]="'w-4 h-4'"
-          />
-          <span>{{ product.rating }}</span>
-        </span>
+          <div class="grid grid-cols-3 h-16 items-center justify-center w-[5rem]">
+            <user-preview
+              *ngFor="let user of product.users"
+              [id]="user.id"
+              [imagePath]="user.imagePath"
+              [name]="user.name"
+            ></user-preview>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <app-image
+              [src]="'assets/svg/star.svg'"
+              [alt]="'rating'"
+              [className]="'w-8 h-8'"
+            />
+            <span>({{ product.rating }})</span>
+          </div>
+        </div>
       </div>
 
       <div class="flex flex-col gap-2 items-center mt-6">
