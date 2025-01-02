@@ -3,12 +3,11 @@ import { RouterOutlet } from "@angular/router";
 import { HeaderComponent } from "@/components/Header.component";
 import { FooterComponent } from "@/blocks/sections/footer.section";
 import { ImageComponent } from "@/components/Image.component";
-import { TrackingConsentComponent } from "@/blocks/sections/TrackingConsent.section";
 
 @Component({
   selector: "app-main-layout",
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, ImageComponent, TrackingConsentComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, ImageComponent,],
   template: `
     <div class="min-h-screen flex flex-col overflow-x-hidden">
       <app-header></app-header>
