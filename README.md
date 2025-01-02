@@ -1,6 +1,6 @@
 # 🍽️ Food Hut - Angular Chronicles - Part 1
 
-![Food Hut](./assets/gif/food-hut.gif)
+![Food Hut](https://raw.githubusercontent.com/ricardo564/angular-chronicles-part-1/master/assets/gif/food-hut.gif)
 
 Project to learn Angular and see how compatible my skills are with the framework.
 
