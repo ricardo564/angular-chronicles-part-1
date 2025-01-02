@@ -9,7 +9,10 @@ import { ButtonComponent } from "@/components/Button.component";
   standalone: true,
   imports: [CommonModule, ProductCardComponent, ButtonComponent],
   template: `
-    <section id="menu-section" class="py-16 px-4 max-w-7xl mx-auto min-h-[600px] md:max-w-[900px] lg:max-w-[1400px]">
+    <section
+      id="menu-section"
+      class="py-16 px-4 max-w-7xl mx-auto min-h-[600px] md:max-w-[900px] lg:max-w-[1400px]"
+    >
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold">
           Menu That
@@ -36,22 +39,32 @@ import { ButtonComponent } from "@/components/Button.component";
         </app-button>
       </div>
 
-      <div class="flex flex-wrap gap-6 gap-y-14 items-center justify-center">
+      <div
+        class="hidden md:flex flex-wrap gap-6 gap-y-14 items-center justify-center"
+      >
         <ng-container *ngIf="filteredProducts.length > 0; else noProducts">
           <app-product-card
             *ngFor="let product of filteredProducts"
             [product]="product"
           ></app-product-card>
         </ng-container>
-
-        <ng-template #noProducts>
-          <div class="col-span-full text-center py-8">
-            <p class="text-gray-500 text-lg">
-              Sorry, no products found in this category.
-            </p>
-          </div>
-        </ng-template>
       </div>
+
+      <div
+        class="flex md:hidden flex-wrap gap-6 gap-y-14 items-center justify-center"
+      >
+        <ng-container *ngIf="filteredProducts.length > 0; else noProducts">
+          <app-product-card [product]="filteredProducts[0]"></app-product-card>
+        </ng-container>
+      </div>
+
+      <ng-template #noProducts>
+        <div class="col-span-full text-center py-8">
+          <p class="text-gray-500 text-lg">
+            Sorry, no products found in this category.
+          </p>
+        </div>
+      </ng-template>
     </section>
   `,
 })
@@ -75,7 +88,8 @@ export class MenuSection {
       name: "Berry Banana French Toast",
       image: "/assets/images/berry-banana-french-toast.webp",
       rating: 4.8,
-      description: "Fluffy French toast topped with fresh berries, sliced bananas, and maple syrup drizzle",
+      description:
+        "Fluffy French toast topped with fresh berries, sliced bananas, and maple syrup drizzle",
       price: 12.99,
       category: "breakfast",
       users: [
@@ -101,7 +115,8 @@ export class MenuSection {
       name: "Buddha Bowl",
       image: "/assets/images/buddha-bowl-sauce.webp",
       rating: 4.7,
-      description: "Nutritious bowl with quinoa, roasted vegetables, avocado, and signature tahini sauce",
+      description:
+        "Nutritious bowl with quinoa, roasted vegetables, avocado, and signature tahini sauce",
       price: 14.99,
       category: "lunch",
       users: [
@@ -127,7 +142,8 @@ export class MenuSection {
       name: "Cheese Bacon Burger",
       image: "/assets/images/cheese-bacon-burger.webp",
       rating: 4.6,
-      description: "Premium beef patty with melted cheddar, crispy bacon, fresh vegetables, and special sauce",
+      description:
+        "Premium beef patty with melted cheddar, crispy bacon, fresh vegetables, and special sauce",
       price: 16.99,
       category: "dinner",
       users: [
@@ -153,7 +169,8 @@ export class MenuSection {
       name: "Crispy Chicken Burger",
       image: "/assets/images/crispy-chicken-burger.webp",
       rating: 4.5,
-      description: "Crunchy breaded chicken fillet with lettuce, tomato, and honey mustard sauce",
+      description:
+        "Crunchy breaded chicken fillet with lettuce, tomato, and honey mustard sauce",
       price: 15.99,
       category: "lunch",
       users: [
@@ -179,7 +196,8 @@ export class MenuSection {
       name: "Grilled Chicken Plate",
       image: "/assets/images/grilled-chicken-plate.webp",
       rating: 4.4,
-      description: "Herb-marinated grilled chicken breast served with seasonal vegetables and rice",
+      description:
+        "Herb-marinated grilled chicken breast served with seasonal vegetables and rice",
       price: 17.99,
       category: "dinner",
       users: [
@@ -205,7 +223,8 @@ export class MenuSection {
       name: "Grilled Salmon & Vegetables",
       image: "/assets/images/grilled-salmon-vegetables.webp",
       rating: 4.9,
-      description: "Fresh Atlantic salmon fillet with grilled asparagus and roasted vegetables",
+      description:
+        "Fresh Atlantic salmon fillet with grilled asparagus and roasted vegetables",
       price: 24.99,
       category: "dinner",
       users: [
@@ -231,7 +250,8 @@ export class MenuSection {
       name: "Mixed Grill Platter",
       image: "/assets/images/mixed-grill.webp",
       rating: 4.7,
-      description: "Assortment of grilled meats including chicken, beef, and lamb with grilled vegetables",
+      description:
+        "Assortment of grilled meats including chicken, beef, and lamb with grilled vegetables",
       price: 28.99,
       category: "dinner",
       users: [
@@ -257,7 +277,8 @@ export class MenuSection {
       name: "Shrimp Scampi",
       image: "/assets/images/shrimp-scampi.webp",
       rating: 4.7,
-      description: "Succulent shrimp sautéed in garlic butter white wine sauce over linguine pasta",
+      description:
+        "Succulent shrimp sautéed in garlic butter white wine sauce over linguine pasta",
       price: 22.99,
       category: "italian",
       users: [
@@ -277,7 +298,7 @@ export class MenuSection {
           name: "Ava Patel",
         },
       ],
-    }
+    },
   ];
 
   get filteredProducts() {
@@ -291,6 +312,7 @@ export class MenuSection {
   }
 
   selectCategory(categoryId: string) {
-    this.selectedCategory = this.selectedCategory === categoryId ? null : categoryId;
+    this.selectedCategory =
+      this.selectedCategory === categoryId ? null : categoryId;
   }
 }
