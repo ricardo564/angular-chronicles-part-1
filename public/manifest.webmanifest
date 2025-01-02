@@ -1,7 +1,7 @@
 {
   "name": "FoodHut - Food Delivery App",
   "short_name": "FoodHut",
-  "description": "Order delicious food from your favorite restaurants with easy mobile ordering and delivery",
+  "description": "Order delicious food from your favorite restaurants with easy mobile ordering and delivery.",
   "theme_color": "#ef4444",
   "background_color": "#ffffff",
   "display": "standalone",
