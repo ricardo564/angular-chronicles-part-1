@@ -25,7 +25,11 @@ import type { NavigationItem } from "@/types/navigation.types";
           </a>
         </nav>
 
-        <download-shortcut></download-shortcut>
+        <download-shortcut [className]="'hidden lg:block'"></download-shortcut>
+      </div>
+
+      <div class="lg:hidden">
+        Menu
       </div>
     </header>
   `,
