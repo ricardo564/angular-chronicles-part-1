@@ -5,7 +5,8 @@
 Project to learn Angular and see how compatible my skills are with the framework.
 
 ## 🔗 Quick Links
-- [Live Preview](https://food-hut-angular-chronicles-1.netlify.app/)
+- [Live Preview Netlify](https://food-hut-angular-chronicles-1.netlify.app/)
+- [Live Preview Github Pages](https://ricardo564.github.io/angular-chronicles-part-1/)
 - [Design Inspiration](https://www.figma.com/community/file/1103820487891554272)
 - [Report a Bug](https://github.com/ricardo564/angular-chronicles-part-1/issues)
 
