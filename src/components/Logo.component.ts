@@ -6,7 +6,7 @@ import { ImageComponent } from "./Image.component";
   standalone: true,
   imports: [ImageComponent,],
   template: `
-    <a class="flex items-center" [href]="'#intro-section'" rel="home">
+    <a class="flex items-center z-[999]" [href]="'#intro-section'" rel="home">
       <app-image
         [src]="'assets/logo.svg'"
         [alt]="'Food Hut'"
