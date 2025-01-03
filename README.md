@@ -18,3 +18,46 @@ This project's layout is based on [Food Hut](https://www.figma.com/community/fil
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)](https://rxjs.dev)
 [![NgRx](https://img.shields.io/badge/NgRx-BA2BD2?style=for-the-badge&logo=redux&logoColor=white)](https://ngrx.io)
+
+
+## 🤝 How to Contribute
+
+1. 🍴 Fork the project
+2. 🌱 Create your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. ✍️ Make your changes
+4. 📝 Commit using Gitmoji for categorization
+   ```bash
+   git commit -m "✨ feat: Add amazing feature"
+   ```
+5. 📤 Push to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+6. 🔄 Open a Pull Request
+
+### 📋 Prerequisites
+
+- Node.js 18.x or higher
+- pnpm 8.x or higher
+- Angular CLI 17.x
+
+### 🏃‍♂️ Running Locally
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/angular-chronicles-part-1.git
+   ```
+2. Install dependencies
+   ```bash
+   pnpm install
+   ```
+3. Start the development server
+   ```bash
+   pnpm start
+   ```
+4. Navigate to `http://localhost:4200`
+
+### 🧪 Running Tests
