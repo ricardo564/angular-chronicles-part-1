@@ -1,17 +1,33 @@
 # 🍽️ Food Hut - Angular Chronicles - Part 1
 
-![Food Hut](https://raw.githubusercontent.com/ricardo564/angular-chronicles-part-1/master/assets/gif/food-hut.gif)
-
-Project to learn Angular and see how compatible my skills are with the framework.
+## 🎯 Project Overview
+I developed this project to explore Angular's ecosystem and compare it with my Vue.js and React experience. The project showcases several key Angular features and modern web development practices.
 
 ## 🔗 Quick Links
-- [Live Preview Netlify](https://food-hut-angular-chronicles-1.netlify.app/)
+- [Live Preview](https://food-hut-angular-chronicles-1.netlify.app/)
+- [GitHub Repository](https://github.com/ricardo564/angular-chronicles-part-1)
 - [Design Inspiration](https://www.figma.com/community/file/1103820487891554272)
 - [Report a Bug](https://github.com/ricardo564/angular-chronicles-part-1/issues)
 
-## 🎨 Design Inspiration
-This project's layout is based on [Food Hut](https://www.figma.com/community/file/1103820487891554272) by [Kamran Ali](https://www.figma.com/@KamranAlime).
+## 🛠️ Key Technical Implementations
+- ⚡ Progressive Web App (PWA) capabilities
+- 🔄 Angular Router for seamless navigation
+- 🎨 TailwindCSS for responsive design
+- 📱 Mobile-first approach
+- 🔍 Dynamic content rendering with structural directives
+- 🎯 Conditional rendering and loop optimization
 
+## 📚 Learning Outcomes
+- 🏗️ Gained hands-on experience with Angular's component architecture
+- 📘 Implemented TypeScript best practices
+- 🎨 Mastered Angular's template syntax
+- 🔄 Enhanced understanding of rendering conditionals
+- 📦 Improved code organization skills
+
+## 🎨 Design Credits
+UI/UX inspired by [Food Hut](https://www.figma.com/community/file/1103820487891554272) by [Kamran Ali](https://www.figma.com/@KamranAlime), adapted and implemented with modern web technologies.
+
+#Angular #PWA #WebDev #FrontendDevelopment #TypeScript #TailwindCSS
 ## 🚀 Technologies
 [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
@@ -19,6 +35,9 @@ This project's layout is based on [Food Hut](https://www.figma.com/community/fil
 [![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)](https://rxjs.dev)
 [![NgRx](https://img.shields.io/badge/NgRx-BA2BD2?style=for-the-badge&logo=redux&logoColor=white)](https://ngrx.io)
 
+## 🌟 Connect & Follow
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardo-camilo-web/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ricardo564)
 
 ## 🤝 How to Contribute
 
