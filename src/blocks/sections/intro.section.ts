@@ -136,7 +136,7 @@ import { FoodRatingCardComponent } from '@/components/FoodRatingCard.component';
         class="w-full md:w-1/2 relative my-8 md:my-auto hidden md:flex items-center justify-center"
       >
         <div
-          class="absolute inset-0 bg-transparent p-2 h-16 -mt-[4.5rem] z-[99]"
+          class="absolute inset-0 bg-transparent p-2 h-16 -mt-[4.5rem] z-[9]"
         >
           <app-image
             [src]="'assets/svg/fire.svg'"
