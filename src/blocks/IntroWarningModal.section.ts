@@ -5,11 +5,17 @@ import {
   saveItemOnLocalStorage,
 } from "@/utils/localStorageHandler";
 import { Router, RouterModule } from "@angular/router";
+import { ImageComponent } from "@/components/Image.component";
 
 @Component({
   selector: "intro-warning-modal",
   standalone: true,
-  imports: [ModalComponent, CommonModule, RouterModule],
+  imports: [
+    ModalComponent,
+    CommonModule,
+    RouterModule,
+    ImageComponent,
+  ],
   template: `
     <app-modal
       [id]="'intro-warning-modal'"
@@ -20,7 +26,7 @@ import { Router, RouterModule } from "@angular/router";
     >
       <div class="p-2 space-y-6">
         <div
-          class="p-4 rounded-lg shadow-md bg-gradient-to-r from-green-600 to-blue-500"
+          class="p-4 rounded-lg shadow-md bg-gradient-to-r from-red-600 to-red-100"
         >
           <p class="text-lg font-medium text-center text-white">
             Welcome to my study project! 🚀
@@ -68,20 +74,12 @@ import { Router, RouterModule } from "@angular/router";
             rel="noopener noreferrer"
             class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100"
           >
-            <svg
-              class="w-6 h-6 text-gray-700"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="{2}"
-                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
+            <app-image
+              [src]="'assets/images/ricardo-camilo-frontend-developer-frontend-engineer-software-engineer-web-developer-vuejs-vue-reactjs-react-javascript-typescript-component-architecture.webp'"
+              [alt]="'Heart circle'"
+              [className]="'w-6 h-6 mr-2 scale-150'"
+            ></app-image>
+
             <span class="font-medium text-gray-700">
               Check out my portfolio
             </span>
@@ -189,7 +187,7 @@ export class IntroWarningModalSection implements AfterViewInit {
 
   getToggleButtonClasses(): string {
     return `relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
-      this.analyticsEnabled ? "bg-green-600" : "bg-gray-200"
+      this.analyticsEnabled ? "bg-red-600" : "bg-gray-200"
     }`;
   }
 
