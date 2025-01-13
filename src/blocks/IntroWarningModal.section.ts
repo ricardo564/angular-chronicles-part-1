@@ -1,25 +1,18 @@
 import { Component, ChangeDetectorRef, AfterViewInit } from "@angular/core";
 import { ModalComponent } from "@/components/Modal.component";
 import { CommonModule } from "@angular/common";
-import {
-  saveItemOnLocalStorage,
-} from "@/utils/localStorageHandler";
+import { saveItemOnLocalStorage } from "@/utils/localStorageHandler";
 import { Router, RouterModule } from "@angular/router";
 import { ImageComponent } from "@/components/Image.component";
 
 @Component({
   selector: "intro-warning-modal",
   standalone: true,
-  imports: [
-    ModalComponent,
-    CommonModule,
-    RouterModule,
-    ImageComponent,
-  ],
+  imports: [ModalComponent, CommonModule, RouterModule, ImageComponent],
   template: `
     <app-modal
       [id]="'intro-warning-modal'"
-      [title]="'🍽️ Food Hut - Angular Chronicles - Part 1'"
+      [title]="'🍽️ Food Hut - Angular Chronicles'"
       [isOpen]="isOpen"
       [class]="'w-screen h-screen overflow-hidden overflow-y-scroll z-[9999]'"
       (closeModal)="closeModal()"
@@ -33,9 +26,9 @@ import { ImageComponent } from "@/components/Image.component";
           </p>
         </div>
 
-        <div class="p-4 rounded-lg bg-gray-50 flex flex-col gap-1">
+        <div class="rounded-lg bg-gray-50 flex flex-col gap-1">
           <div
-            class="flex items-center justify-between p-4 rounded-lg bg-gray-50"
+            class="flex items-center justify-between p-2 rounded-lg bg-gray-50"
           >
             <span class="text-gray-700"> Allow Analytics Tools </span>
             <button
@@ -50,11 +43,11 @@ import { ImageComponent } from "@/components/Image.component";
 
           <a
             [routerLink]="['/privacy-policy']"
-            class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100"
+            class="flex items-center justify-center gap-2 p-1 py-2 transition-colors rounded-lg bg-gray-50 text-blue-500 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span class="font-medium text-gray-700">
+            <span class="font-medium">
               Privacy Policy
             </span>
           </a>
@@ -68,22 +61,32 @@ import { ImageComponent } from "@/components/Image.component";
         </div>
 
         <div class="space-y-3">
-          <a
-            [href]="portfolioUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100"
-          >
-            <app-image
-              [src]="'assets/images/ricardo-camilo-frontend-developer-frontend-engineer-software-engineer-web-developer-vuejs-vue-reactjs-react-javascript-typescript-component-architecture.webp'"
-              [alt]="'Heart circle'"
-              [className]="'w-6 h-6 mr-2 scale-150'"
-            ></app-image>
+          <div class="relative">
+            <div class="absolute -inset-5 flex items-center justify-center">
+              <div
+                class="w-full h-full max-w-sm mx-auto lg:mx-0 opacity-30 blur-lg bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600 animate-pulse"
+              ></div>
+            </div>
 
-            <span class="font-medium text-gray-700">
-              Check out my portfolio
-            </span>
-          </a>
+            <a
+              [href]="portfolioUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100 relative  max-w-[17rem] mx-auto"
+            >
+              <app-image
+                [src]="
+                  'assets/images/ricardo-camilo-frontend-developer-frontend-engineer-software-engineer-web-developer-vuejs-vue-reactjs-react-javascript-typescript-component-architecture.webp'
+                "
+                [alt]="'Heart circle'"
+                [className]="'w-8 h-8 mr-2'"
+              ></app-image>
+
+              <span class="font-medium text-gray-700">
+                Check out my portfolio
+              </span>
+            </a>
+          </div>
 
           <a
             [href]="'https://www.linkedin.com/in/' + linkedinUsername"
@@ -145,7 +148,7 @@ export class IntroWarningModalSection implements AfterViewInit {
   isOpen = false;
 
   checkIfPageIsPrivacyPolicy() {
-    return this.router.url === '/privacy-policy';
+    return this.router.url === "/privacy-policy";
   }
 
   constructor(private cdr: ChangeDetectorRef, private router: Router) {}
