@@ -27,9 +27,7 @@ import { Product } from "@/types/product.types";
           Today <span class="text-red-500">Special</span> Offers
         </h2>
         <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
-          Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
-          Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever
-          Since The 1500s
+          Discover our handpicked selection of daily specials, featuring irresistible dishes at amazing prices. From savory kebabs to flavorful curries, treat yourself to exceptional meals that won't break the bank.
         </p>
       </div>
 
