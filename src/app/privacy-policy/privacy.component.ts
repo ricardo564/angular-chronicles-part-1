@@ -7,7 +7,6 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule],
   template: `
     <main class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8 space-y-8 pt-32">
-      <!-- Main Privacy Policy Section -->
       <section class="text-gray-700 dark:text-gray-300">
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
           Privacy Policy
@@ -67,12 +66,11 @@ import { CommonModule } from "@angular/common";
         </div>
       </section>
 
-      <!-- Security Section -->
       <section class="text-gray-700 dark:text-gray-300">
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
           Security and Trust of 🍽️ Food Hut - Angular Chronicles - Part 1 Website
         </h2>
-        
+
         <div class="prose dark:prose-invert max-w-none">
           <p>
             The website is reliable and safe for user navigation as confirmed by
@@ -96,7 +94,6 @@ import { CommonModule } from "@angular/common";
         </div>
       </section>
 
-      <!-- Cookie Policy Section -->
       <section class="text-gray-700 dark:text-gray-300">
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
           Cookie Policy 🍽️ Food Hut - Angular Chronicles - Part 1
@@ -118,7 +115,6 @@ import { CommonModule } from "@angular/common";
         </div>
       </section>
 
-      <!-- Cookie Usage Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
         <h3 class="text-xl font-medium text-gray-900 dark:text-white">Cookies We Set</h3>
         <ul class="space-y-4 list-none pl-0">
@@ -188,7 +184,6 @@ import { CommonModule } from "@angular/common";
         </ul>
       </section>
 
-      <!-- Third Party Cookies Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
         <h3 class="text-xl font-medium text-gray-900 dark:text-white">Third-party cookies</h3>
         <div class="prose dark:prose-invert max-w-none">
@@ -241,7 +236,6 @@ import { CommonModule } from "@angular/common";
         </div>
       </section>
 
-      <!-- User Commitment Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
         <h3 class="text-xl font-medium text-gray-900 dark:text-white">User Commitment</h3>
         <p>
@@ -268,7 +262,6 @@ import { CommonModule } from "@angular/common";
         </ul>
       </section>
 
-      <!-- Browser Links Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
         <h3 class="text-xl font-medium text-gray-900 dark:text-white">Block cookies:</h3>
         <p>
@@ -334,7 +327,6 @@ import { CommonModule } from "@angular/common";
         </ul>
       </section>
 
-      <!-- Final Information Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-4">
         <h3 class="text-xl font-medium text-gray-900 dark:text-white">More Information</h3>
         <div class="prose dark:prose-invert max-w-none">
