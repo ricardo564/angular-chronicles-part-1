@@ -64,7 +64,7 @@ import { ImageComponent } from "@/components/Image.component";
           <div class="relative">
             <div class="absolute -inset-5 flex items-center justify-center">
               <div
-                class="w-full h-full max-w-sm mx-auto lg:mx-0 opacity-30 blur-lg bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600 animate-pulse"
+                class="w-full h-[50%] max-w-sm mx-auto lg:mx-0 opacity-30 blur-lg bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600 animate-pulse"
               ></div>
             </div>
 
@@ -72,7 +72,7 @@ import { ImageComponent } from "@/components/Image.component";
               [href]="portfolioUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100 relative  max-w-[17rem] mx-auto"
+              class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100 relative  mx-auto"
             >
               <app-image
                 [src]="
