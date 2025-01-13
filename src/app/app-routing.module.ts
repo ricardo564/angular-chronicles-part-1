@@ -4,6 +4,7 @@ import { MainLayoutComponent } from '@/app/layouts/MainLayout.component';
 import { SelectivePreloadingStrategyService } from '@/app/selective-preloading-strategy.service';
 import { HomeComponent } from '@/app/home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { PrivacyComponent } from '@/app/privacy-policy/privacy.component';
 
 export const routes: Routes = [
   {
@@ -14,6 +15,16 @@ export const routes: Routes = [
         path: '',
         component: HomeComponent,
       },
+    ]
+  },
+  {
+    path: 'privacy-policy',
+    component: MainLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: PrivacyComponent,
+      }
     ]
   }
 ];
