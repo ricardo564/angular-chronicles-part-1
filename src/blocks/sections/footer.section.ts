@@ -19,8 +19,7 @@ import { RouterModule } from "@angular/router";
         <div class="w-full md:max-w-[21rem] flex flex-col gap-4">
           <h2 class="text-red-500 text-2xl font-bold">Foodhut</h2>
           <p class="text-gray-600 max-w-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor
+            Discover delicious meals from local restaurants, delivered right to your doorstep with speed and care.
           </p>
 
           <div class="flex space-x-4">
@@ -163,8 +162,7 @@ import { RouterModule } from "@angular/router";
               Get in touch
             </h3>
             <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
+              Subscribe to our newsletter for exclusive deals, new restaurants, and weekly special offers delivered to your inbox.
             </p>
           </div>
 
@@ -194,13 +192,15 @@ import { RouterModule } from "@angular/router";
           rel="noopener"
           target="_blank"
         >
-          Copyright © 2022 Foodhut.
+          Copyright © {{ currentYear }} Foodhut.
         </a>
       </div>
     </footer>
   `,
 })
 export class FooterComponent {
+  currentYear = new Date().getFullYear();
+
   getRandomLinkForRedirection() {
     return getRandomLinkForRedirection();
   }
