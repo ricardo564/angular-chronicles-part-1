@@ -3,11 +3,12 @@ import { ImageComponent } from "@/components/Image.component";
 import { ButtonComponent } from "@/components/Button.component";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
 import { InputTextComponent } from "@/components/InputText.component";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: "app-footer",
   standalone: true,
-  imports: [ImageComponent, ButtonComponent, InputTextComponent],
+  imports: [ImageComponent, ButtonComponent, InputTextComponent, RouterModule],
   template: `
     <footer
       class="bg-white py-12 px-4 mt-auto bottom-0 w-full max-w-[1300px] mx-auto flex flex-col items-center justify-center pt-[15rem] md:pt-[5rem]"
@@ -136,7 +137,7 @@ import { InputTextComponent } from "@/components/InputText.component";
               </li>
               <li>
                 <a
-                  [href]="[getRandomLinkForRedirection()]"
+                  [routerLink]="['/privacy-policy']"
                   class="text-gray-600 hover:text-red-500"
                   rel="noopener"
                   target="_blank"
