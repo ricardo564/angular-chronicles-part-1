@@ -3,13 +3,13 @@ import { ModalComponent } from "@/components/Modal.component";
 import { CommonModule } from "@angular/common";
 import {
   saveItemOnLocalStorage,
-  getItemFromLocalStorage,
 } from "@/utils/localStorageHandler";
+import { Router, RouterModule } from "@angular/router";
 
 @Component({
   selector: "intro-warning-modal",
   standalone: true,
-  imports: [ModalComponent, CommonModule],
+  imports: [ModalComponent, CommonModule, RouterModule],
   template: `
     <app-modal
       [id]="'intro-warning-modal'"
@@ -25,6 +25,33 @@ import {
           <p class="text-lg font-medium text-center text-white">
             Welcome to my study project! 🚀
           </p>
+        </div>
+
+        <div class="p-4 rounded-lg bg-gray-50 flex flex-col gap-1">
+          <div
+            class="flex items-center justify-between p-4 rounded-lg bg-gray-50"
+          >
+            <span class="text-gray-700"> Allow Analytics Tools </span>
+            <button
+              (click)="toggleAnalytics()"
+              [class]="getToggleButtonClasses()"
+              role="switch"
+              [attr.aria-checked]="analyticsEnabled"
+            >
+              <span [class]="getToggleSpanClasses()"></span>
+            </button>
+          </div>
+
+          <a
+            [routerLink]="['/privacy-policy']"
+            class="flex items-center justify-center gap-2 p-3 transition-colors rounded-lg bg-gray-50 hover:bg-gray-100"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="font-medium text-gray-700">
+              Privacy Policy
+            </span>
+          </a>
         </div>
 
         <div class="p-4 rounded-lg bg-gray-50">
@@ -82,20 +109,6 @@ import {
           </a>
         </div>
 
-        <div
-          class="flex items-center justify-between p-4 rounded-lg bg-gray-50"
-        >
-          <span class="text-gray-700"> Allow Analytics Tools </span>
-          <button
-            (click)="toggleAnalytics()"
-            [class]="getToggleButtonClasses()"
-            role="switch"
-            [attr.aria-checked]="analyticsEnabled"
-          >
-            <span [class]="getToggleSpanClasses()"></span>
-          </button>
-        </div>
-
         <div class="pt-4 mt-4 border-t">
           <p class="text-sm text-center text-gray-500">
             Design Credits:
@@ -133,13 +146,22 @@ export class IntroWarningModalSection implements AfterViewInit {
   analyticsEnabled = true;
   isOpen = false;
 
-  constructor(private cdr: ChangeDetectorRef) {}
+  checkIfPageIsPrivacyPolicy() {
+    return this.router.url === '/privacy-policy';
+  }
+
+  constructor(private cdr: ChangeDetectorRef, private router: Router) {}
 
   ngAfterViewInit(): void {
     Promise.resolve().then(() => {
       saveItemOnLocalStorage("analyticsEnabled", String(this.analyticsEnabled));
 
-      this.isOpen = true;
+      if (this.checkIfPageIsPrivacyPolicy()) {
+        this.isOpen = false;
+      } else {
+        this.isOpen = true;
+      }
+
       this.cdr.detectChanges();
     });
   }
