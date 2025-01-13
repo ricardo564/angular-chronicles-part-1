@@ -10,61 +10,59 @@ import { CommonModule } from "@angular/common";
       <!-- Main Privacy Policy Section -->
       <section class="text-gray-700 dark:text-gray-300">
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-          Política Privacidade
+          Privacy Policy
         </h1>
 
         <div class="prose dark:prose-invert max-w-none space-y-6">
           <p>
-            A sua privacidade é importante para nós. É política do 🍽️ Food Hut -
-            Angular Chronicles - Part 1 respeitar a sua privacidade em relação a
-            qualquer informação sua que possamos coletar no site
+            Your privacy is important to us. It is 🍽️ Food Hut - Angular Chronicles
+            - Part 1's policy to respect your privacy regarding any information we
+            may collect from you on the
             <a
               href="https://food-hut-angular-chronicles-1.netlify.app/"
               target="_blank"
             >
               🍽️ Food Hut - Angular Chronicles - Part 1
             </a>
-            , e outros sites que possuímos e operamos.
+            website, and other sites we own and operate.
           </p>
           <p>
-            Solicitamos informações pessoais apenas quando realmente precisamos
-            delas para lhe fornecer um serviço. Fazemo-lo por meios justos e
-            legais, com o seu conhecimento e consentimento. Também informamos
-            por que estamos coletando e como será usado.
+            We only request personal information when we truly need it to provide
+            you with a service. We collect it through fair and lawful means, with
+            your knowledge and consent. We also inform you why we're collecting it
+            and how it will be used.
           </p>
           <p>
-            Apenas retemos as informações coletadas pelo tempo necessário para
-            fornecer o serviço solicitado. Quando armazenamos dados, protegemos
-            dentro de meios comercialmente aceitáveisp ara evitar perdas e
-            roubos, bem como acesso, divulgação, cópia, uso ou modificação não
-            autorizados.
+            We only retain collected information for as long as necessary to
+            provide the requested service. We protect the stored data using
+            commercially acceptable means to prevent loss and theft, as well as
+            unauthorized access, disclosure, copying, use, or modification.
           </p>
           <p>
-            Não compartilhamos informações de identificação pessoal publicamente
-            ou com terceiros, exceto quando exigido por lei.
+            We don't share personally identifying information publicly or with
+            third parties, except when required by law.
           </p>
           <p>
-            O nosso site pode ter links para sites externos que não são operados
-            por nós. Esteja ciente de que não temos controle sobre o conteúdo e
-            práticas desses sites e não podemos aceitar responsabilidade por
-            suas respectivas
+            Our website may link to external sites that we don't operate. Please
+            be aware that we have no control over the content and practices of
+            these sites and cannot accept responsibility for their respective
             <a
               href="https://privacidade.me/"
               target="_BLANK"
               style="color: #576d96;text-decoration: none;"
-              >políticas de privacidade</a
+              >privacy policies</a
             >.
           </p>
           <p>
-            Você é livre para recusar a nossa solicitação de informações
-            pessoais, entendendo que talvez não possamos fornecer alguns dos
-            serviços desejados.
+            You are free to refuse our request for personal information,
+            understanding that we may be unable to provide some of your desired
+            services.
           </p>
           <p>
-            O uso continuado de nosso site será considerado como aceitação de
-            nossas práticas em torno de privacidade e informações pessoais. Se
-            você tiver alguma dúvida sobre como lidamos com dados do usuário e
-            informações pessoais, entre em contato conosco.
+            Your continued use of our website will be considered as acceptance of
+            our practices around privacy and personal information. If you have any
+            questions about how we handle user data and personal information,
+            please contact us.
           </p>
         </div>
       </section>
@@ -72,29 +70,28 @@ import { CommonModule } from "@angular/common";
       <!-- Security Section -->
       <section class="text-gray-700 dark:text-gray-300">
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-          Segurança e Confiança do site 🍽️ Food Hut - Angular Chronicles - Part 1
+          Security and Trust of 🍽️ Food Hut - Angular Chronicles - Part 1 Website
         </h2>
         
         <div class="prose dark:prose-invert max-w-none">
           <p>
-            O site é confiável e seguro para navegação do usuário conformado
-            pela
+            The website is reliable and safe for user navigation as confirmed by
             <a
-            target="_BLANK"
-            style="color: #576d96;text-decoration: none;"
-            href="https://confiavel.com.br/https://food-hut-angular-chronicles-1.netlify.app/"
-            rel="noopener noreferrer"
-            >Verificação</a
-          >. A página verifica informações do site para identificar possíveis
-          problemas de segurança. A navegação verificada pela ferramenta
-          <a
-            target="_BLANK"
-            style="color: #576d96;text-decoration: none;"
-            href="https://transparencyreport.google.com/safe-browsing/search?url=https://food-hut-angular-chronicles-1.netlify.app/"
-            rel="noopener noreferrer"
-            >segurança do Google</a
-          >
-              mostra que o site é seguro.
+              target="_BLANK"
+              style="color: #576d96;text-decoration: none;"
+              href="https://confiavel.com.br/https://food-hut-angular-chronicles-1.netlify.app/"
+              rel="noopener noreferrer"
+            >Verification</a
+            >. The page verifies website information to identify potential
+            security issues. Navigation verified by
+            <a
+              target="_BLANK"
+              style="color: #576d96;text-decoration: none;"
+              href="https://transparencyreport.google.com/safe-browsing/search?url=https://food-hut-angular-chronicles-1.netlify.app/"
+              rel="noopener noreferrer"
+            >Google's security tool</a
+            >
+            shows that the site is secure.
           </p>
         </div>
       </section>
@@ -102,26 +99,20 @@ import { CommonModule } from "@angular/common";
       <!-- Cookie Policy Section -->
       <section class="text-gray-700 dark:text-gray-300">
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-          Política de Cookies 🍽️ Food Hut - Angular Chronicles - Part 1
+          Cookie Policy 🍽️ Food Hut - Angular Chronicles - Part 1
         </h2>
 
         <div class="space-y-6">
           <div>
-            <h3 class="text-xl font-medium text-gray-900 dark:text-white mb-4">O que são cookies?</h3>
+            <h3 class="text-xl font-medium text-gray-900 dark:text-white mb-4">What are cookies?</h3>
             <p>
-              Como é prática comum em quase todos os sites profissionais, este
-              site usa cookies, que são pequenos arquivos baixados no seu
-              computador, para melhorar sua experiência. Esta página descreve
-              quais informações eles coletam, como as usamos e por que às vezes
-              precisamos armazenar esses cookies. Também compartilharemos como
-              você pode impedir que esses cookies sejam armazenados, no entanto,
-              isso pode fazer o downgrade ou 'quebrar' certos elementos da
-              funcionalidade do site.
-          melhorar sua experiência. Esta página descreve quais informações eles
-          coletam, como as usamos e por que às vezes precisamos armazenar esses
-              cookies. Também compartilharemos como você pode impedir que esses
-              cookies sejam armazenados, no entanto, isso pode fazer o downgrade
-              ou 'quebrar' certos elementos da funcionalidade do site.
+              As is common practice with almost all professional websites, this
+              site uses cookies, which are small files downloaded to your
+              computer, to improve your experience. This page describes what
+              information they collect, how we use it, and why we sometimes need
+              to store these cookies. We will also share how you can prevent
+              these cookies from being stored, however, this may downgrade or
+              'break' certain elements of the site's functionality.
             </p>
           </div>
         </div>
@@ -129,74 +120,69 @@ import { CommonModule } from "@angular/common";
 
       <!-- Cookie Usage Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
-        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Cookies que definimos</h3>
+        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Cookies We Set</h3>
         <ul class="space-y-4 list-none pl-0">
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Cookies relacionados à conta</span>
+            <span class="font-medium">Account-related cookies</span>
             <p class="mt-2">
-              Se você criar uma conta conosco, usaremos cookies para o gerenciamento
-              do processo de inscrição e administração geral. Esses cookies
-              geralmente serão excluídos quando você sair do sistema, porém, em
-              alguns casos, eles poderão permanecer posteriormente para lembrar as
-              preferências do seu site ao sair.<br /><br />
+              If you create an account with us, we will use cookies for the
+              management of the signup process and general administration. These
+              cookies will usually be deleted when you log out, however, in some
+              cases, they may remain afterward to remember your site preferences
+              when logged out.<br /><br />
             </p>
           </li>
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Cookies relacionados ao login</span>
+            <span class="font-medium">Login-related cookies</span>
             <p class="mt-2">
-              Utilizamos cookies quando você está logado, para que possamos lembrar
-              dessa ação. Isso evita que você precise fazer login sempre que visitar
-              uma nova página. Esses cookies são normalmente removidos ou limpos
-              quando você efetua logout para garantir que você possa acessar apenas
-              a recursos e áreas restritas ao efetuar login.<br /><br />
+              We use cookies when you are logged in to remember this fact. This
+              prevents you from having to log in every time you visit a new page.
+              These cookies are typically removed or cleared when you log out to
+              ensure that you can only access restricted features and areas when
+              logged in.<br /><br />
             </p>
           </li>
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Cookies relacionados a boletins por e-mail</span>
+            <span class="font-medium">Cookies related to email newsletters</span>
             <p class="mt-2">
-              Este site oferece serviços de assinatura de boletim informativo ou
-              e-mail e os cookies podem ser usados ​​para lembrar se você já está
-              registrado e se deve mostrar determinadas notificações válidas apenas
-              para usuários inscritos / não inscritos.<br /><br />
+              This site offers newsletter subscription services or email and cookies
+              may be used to remember if you are already registered and should show
+              valid notifications only to subscribed/unsubscribed users.<br /><br />
             </p>
           </li>
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Pedidos processando cookies relacionados</span>
+            <span class="font-medium">Cookies related to shopping</span>
             <p class="mt-2">
-              Este site oferece facilidades de comércio eletrônico ou pagamento e
-              alguns cookies são essenciais para garantir que seu pedido seja
-              lembrado entre as páginas, para que possamos processá-lo
-              adequadamente.<br /><br />
+              This site offers e-commerce or payment facilities and some cookies
+              are essential to ensure that your order is remembered between pages
+              so that we can process it properly.<br /><br />
             </p>
           </li>
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Cookies relacionados a pesquisas</span>
+            <span class="font-medium">Cookies related to searches</span>
             <p class="mt-2">
-              Periodicamente, oferecemos pesquisas e questionários para fornecer
-              informações interessantes, ferramentas úteis ou para entender nossa
-              base de usuários com mais precisão. Essas pesquisas podem usar cookies
-              para lembrar quem já participou numa pesquisa ou para fornecer
-              resultados precisos após a alteração das páginas.<br /><br />
+              Periodically, we conduct surveys and questionnaires to provide
+              interesting information, useful tools, or to better understand our
+              user base. These surveys may use cookies to remember who has
+              participated in a survey or to provide accurate results after
+              page changes.<br /><br />
             </p>
           </li>
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Cookies relacionados a formulários</span>
+            <span class="font-medium">Cookies related to forms</span>
             <p class="mt-2">
-              Quando você envia dados por meio de um formulário como os encontrados
-              nas páginas de contacto ou nos formulários de comentários, os cookies
-              podem ser configurados para lembrar os detalhes do usuário para
-              correspondência futura.<br /><br />
+              When you submit data through a form like contact or comment forms,
+              cookies may be set to remember user details for future correspondence.<br /><br />
             </p>
           </li>
           <li class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
-            <span class="font-medium">Cookies de preferências do site</span>
+            <span class="font-medium">Site preferences cookies</span>
             <p class="mt-2">
-              Para proporcionar uma ótima experiência neste site, fornecemos a
-              funcionalidade para definir suas preferências de como esse site é
-              executado quando você o usa. Para lembrar suas preferências,
-              precisamos definir cookies para que essas informações possam ser
-              chamadas sempre que você interagir com uma página for afetada por suas
-              preferências.<br />
+              To provide you with the best possible experience on this site, we
+              allow you to define your preferences for how this site operates when
+              you use it. To remember your preferences, we need to set cookies so
+              that these settings can be called whenever you interact with a
+              page affected by your preferences.<br />
             </p>
           </li>
         </ul>
@@ -204,51 +190,52 @@ import { CommonModule } from "@angular/common";
 
       <!-- Third Party Cookies Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
-        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Cookies de Terceiros</h3>
+        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Third-party cookies</h3>
         <div class="prose dark:prose-invert max-w-none">
           <p>
-            Em alguns casos especiais, também usamos cookies fornecidos por
-            terceiros confiáveis. A seção a seguir detalha quais cookies de
-            terceiros você pode encontrar através deste site.
+            In some cases, we also use cookies provided by trusted third parties.
+            The following section details which third-party cookies you may find
+            through this site.
           </p>
           <ul>
             <li>
-              Este site usa o
+              This site uses the
               <a href="https://analytics.google.com/analytics/web/"
                 >Google Analytics</a
-              >, que é uma das soluções de análise mais difundidas e confiáveis ​​da
-              Web, para nos ajudar a entender como você usa o site e como podemos
-              melhorar sua experiência. Esses cookies podem rastrear itens como
-              quanto tempo você gasta no site e as páginas visitadas, para que
-              possamos continuar produzindo conteúdo atraente.
+              >, which is one of the most widely used and trusted website
+              analytics solutions on the web, to help us understand how you use
+              the site and how we can improve your experience. These cookies track
+              items such as how much time you spend on the site, the pages you
+              visit, and how you arrived at the site, so we can continue to
+              produce engaging content.
             </li>
           </ul>
           <p>
-            Para mais informações sobre cookies do Google Analytics, consulte a
-            página oficial do Google Analytics.
+            For more information about Google Analytics cookies, please visit the
+            official Google Analytics page.
           </p>
           <ul>
             <li>
-              As análises de terceiros são usadas para rastrear e medir o uso deste
-              site, para que possamos continuar produzindo conteúdo atrativo. Esses
-              cookies podem rastrear itens como o tempo que você passa no site ou as
-              páginas visitadas, o que nos ajuda a entender como podemos melhorar o
-              site para você.
+              Third-party analytics are used to track and measure the use of this
+              site, so we can continue to produce attractive content. These
+              cookies track items such as the time you spend on the site or the
+              pages you visit, which helps us understand how we can improve
+              the site for you.
             </li>
             <li>
-              Periodicamente, testamos novos recursos e fazemos alterações subtis na
-              maneira como o site se apresenta. Quando ainda estamos testando novos
-              recursos, esses cookies podem ser usados ​​para garantir que você
-              receba uma experiência consistente enquanto estiver no site, enquanto
-              entendemos quais otimizações os nossos usuários mais apreciam.
+              Periodically, we test new features and make subtle changes to the
+              way the site is presented. When we are still testing new features,
+              these cookies may be used to ensure that you receive a consistent
+              experience while on the site, as we understand which optimizations
+              our users appreciate the most.
             </li>
             <li>
-              À medida que vendemos produtos, é importante entendermos as
-              estatísticas sobre quantos visitantes de nosso site realmente compram
-              e, portanto, esse é o tipo de dados que esses cookies rastrearão. Isso
-              é importante para você, pois significa que podemos fazer previsões de
-              negócios com precisão que nos permitem analizar nossos custos de
-              publicidade e produtos para garantir o melhor preço possível.
+              As we sell products, it's important for us to understand
+              statistics about how many visitors our site actually buys and,
+              therefore, this is the type of data these cookies track. This is
+              important for you because it means we can make accurate business
+              predictions that allow us to analyze our advertising and product
+              costs to ensure the best possible price.
             </li>
           </ul>
         </div>
@@ -256,44 +243,42 @@ import { CommonModule } from "@angular/common";
 
       <!-- User Commitment Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
-        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Compromisso do Usuário</h3>
+        <h3 class="text-xl font-medium text-gray-900 dark:text-white">User Commitment</h3>
         <p>
-          O usuário se compromete a fazer uso adequado dos conteúdos e da
-          informação que o 🍽️ Food Hut - Angular Chronicles - Part 1 oferece no
-          site e com caráter enunciativo, mas não limitativo:
+          The user commits to using the content and information provided by 🍽️ Food Hut - Angular Chronicles - Part 1
+          on the site in an uninfringed manner, without any of the following:
         </p>
         <ul class="list-disc pl-6 space-y-2">
           <li>
-            A) Não se envolver em atividades que sejam ilegais ou contrárias à boa
-            fé a à ordem pública;
+            A) Engaging in illegal or contrary to good faith or public order
+            activities;
           </li>
           <li>
-            B) Não difundir propaganda ou conteúdo de natureza racista,
-            xenofóbica, ou casas de apostas, jogos de sorte e azar, qualquer tipo
-            de pornografia ilegal, de apologia ao terrorismo ou contra os direitos
-            humanos;
+            B) Disseminating propaganda or content of a racist, xenophobic, or
+            gambling nature, any type of illegal pornography, or incitement to
+            terrorism or human rights violations;
           </li>
           <li>
-            C) Não causar danos aos sistemas físicos (hardwares) e lógicos
-            (softwares) do 🍽️ Food Hut - Angular Chronicles - Part 1, de seus
-            fornecedores ou terceiros, para introduzir ou disseminar vírus
-            informáticos ou quaisquer outros sistemas de hardware ou software que
-            sejam capazes de causar danos anteriormente mencionados.
+            C) Causing damage to the physical (hardware) or logical (software)
+            systems of 🍽️ Food Hut - Angular Chronicles - Part 1, its suppliers
+            or third parties, to introduce or disseminate computer viruses or
+            any other systems of hardware or software that may cause damage
+            previously mentioned.
           </li>
         </ul>
       </section>
 
       <!-- Browser Links Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-6">
-        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Bloquear cookies:</h3>
+        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Block cookies:</h3>
         <p>
-          Você pode impedir a configuração de cookies ajustando as configurações
-        do seu navegador (consulte a Ajuda do navegador para saber como fazer
-        isso). Esteja ciente de que a desativação de cookies afetará a
-        funcionalidade deste e de muitos outros sites que você visita. A
-        desativação de cookies geralmente resultará na desativação de
-        determinadas funcionalidades e recursos deste site. Portanto, é
-            recomendável que você não desative os cookies.
+          You can prevent cookies from being set by adjusting the settings of your
+        browser (see the Help section of your browser for how to do this). Be
+        aware that disabling cookies may affect the functionality and
+        features of this and many other sites that you visit. Disabling cookies
+        generally results in the deactivation of certain functionalities and
+        features of this site. Therefore, it is recommended that you do not
+        disable cookies.
         </p>
         <ul class="space-y-2">
           <li>
@@ -351,17 +336,17 @@ import { CommonModule } from "@angular/common";
 
       <!-- Final Information Section -->
       <section class="text-gray-700 dark:text-gray-300 space-y-4">
-        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Mais informações</h3>
+        <h3 class="text-xl font-medium text-gray-900 dark:text-white">More Information</h3>
         <div class="prose dark:prose-invert max-w-none">
           <p>
-            Esperemos que esteja esclarecido e, como mencionado anteriormente, se
-            houver algo que você não tem certeza se precisa ou não, geralmente é
-            mais seguro deixar os cookies ativados, caso interaja com um dos
-            recursos que você usa em nosso site.
+            Hopefully, this has clarified things for you and as mentioned before,
+            if there is something that you aren't sure whether you need or not,
+            it's usually safer to leave cookies enabled in case they interact
+            with one of the features you use on our site.
           </p>
         </div>
         <p class="text-sm mt-8">
-          Esta política é efetiva a partir de
+          This policy is effective as of
           <strong>Jan</strong>/<strong>2025</strong>.
         </p>
       </section>
