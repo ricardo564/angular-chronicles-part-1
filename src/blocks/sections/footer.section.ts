@@ -4,11 +4,12 @@ import { ButtonComponent } from "@/components/Button.component";
 import { getRandomLinkForRedirection } from "@/utils/getRandomLinkForRedirection";
 import { InputTextComponent } from "@/components/InputText.component";
 import { RouterModule } from "@angular/router";
+import { BuyMeCoffeeComponent } from "@/components/BuyMeCoffee.component";
 
 @Component({
   selector: "app-footer",
   standalone: true,
-  imports: [ImageComponent, ButtonComponent, InputTextComponent, RouterModule],
+  imports: [ImageComponent, ButtonComponent, InputTextComponent, RouterModule, BuyMeCoffeeComponent],
   template: `
     <footer
       class="bg-white py-12 px-4 mt-auto bottom-0 w-full max-w-[1300px] mx-auto flex flex-col items-center justify-center pt-[15rem] md:pt-[5rem]"
@@ -165,6 +166,8 @@ import { RouterModule } from "@angular/router";
               Subscribe to our newsletter for exclusive deals, new restaurants, and weekly special offers delivered to your inbox.
             </p>
           </div>
+
+          <buy-me-coffee username="ricardo.camilo.frontend"></buy-me-coffee>
 
           <div class="flex flex-col sm:flex-row gap-5 items-center justify-center">
             <app-input-text
